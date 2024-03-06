@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from bornsvilkar.dk/upload/btlf/skrivehastighed/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Mar 2024 22:44:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Hastighedstest</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="../../../../kit.fontawesome.com/a48c48fb95.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="browser-warning">
+      Skift til en nyere browser
+    </div>
+    <div id="browser-ok">
+      <section id="word-section">
+        <div class="waiting">loader ord...</div>
+      </section>
+
+      <section id="type-section">
+        <input
+          id="typebox"
+          name="typebox"
+          type="text"
+          tabindex="1"
+          onkeyup="typingTest(event)"
+        />
+        <div id="timer" class="type-btn"><span>1:00</span></div>
+        <button
+        title="Prøv igen"
+          id="restart"
+          class="type-btn"
+          tabindex="2"
+          onclick="restartTest()"
+        >
+          <span id="restart-symbol"><i class="fas fa-sync-alt"></i></span>
+        </button>
+      </section>
+    </div>
+    <script>
+      var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+
+      if (!isIE11) {
+        var isTouch = "ontouchstart" in document.documentElement;
+       
+        if (isTouch) {
+          alert("Du bruger en touch device. Testen er mest retvisende ved brug af keyboard.");
+        }
+        document.write('<script src="main.js"></scr' + "ipt>");
+        document.getElementById("browser-warning").style.display = "none";
+      } else {
+        document.getElementById("browser-ok").style.display = "none";
+        alert("Du sidder på et forældet system. Testen virker ikke i denne browserversion");
+      }
+    </script>
+  </body>
+
+<!-- Mirrored from bornsvilkar.dk/upload/btlf/skrivehastighed/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Mar 2024 22:44:43 GMT -->
+</html>
