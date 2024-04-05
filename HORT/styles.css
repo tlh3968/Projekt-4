@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+        --primary-color: linear-gradient(to right, #1DA8B5, #D2E319);;
+        --secondary-bg1: #D2E319;
+        --secondary-bg2: #1DA8B5;
+        --secondary-bg3: #000000; 
+        --text-color1:#000000;
+        --text-color2: #ffffff;
+
+}
+
+.hero_header {
+    background: var(--primary-color);
+    height: max-content;
+    width: 100%;
+}
