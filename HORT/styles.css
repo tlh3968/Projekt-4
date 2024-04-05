@@ -10,11 +10,34 @@
         --secondary-bg3: #000000; 
         --text-color1:#000000;
         --text-color2: #ffffff;
+}
 
+
+.header_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+}
+
+#header_image {
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header_text {
+    flex: 1; /* Take remaining space */
+    display: flex; /* Display contents as a flex container */
+    flex-direction: column; /* Arrange contents in a column */
 }
 
 .hero_header {
     background: var(--primary-color);
-    height: max-content;
+    height: 800px;
     width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color2);
 }
