@@ -1,0 +1,10 @@
+/* Generel baggrund for hjemmesiden */
+body {
+    background-color: #fffeee;
+}
+
+
+/* CSS for headeren på hjemmesiden */
+.headerList01 li {
+    list-style: none;
+}
