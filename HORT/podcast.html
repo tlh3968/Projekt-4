@@ -5,32 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcasts - HØRT</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav></nav>
     </header>
     <div class="hero_header">
-        <img id="header_image" src="images/Screenshot_2023-08-25_181923.webp" alt="">
-        <div class="header_container">
-             <h1>BLIV HØRT</h1>
+       
+        <div class="header_container"> 
+            <img id="header_image" src="images/Screenshot_2023-08-25_181923.webp" alt="">
+             <div  class="header_text"><h1>BLIV HØRT</h1>
              <h4>Find os her eller via Spotify hver torsdag. </h4>
+            </div>
         </div>
-        <div class="header_text">
+        <div class="header_text"> <!--SKAL LAVE HTML TIL VIS MERE DELEN-->
+
             <p>Ved HØRT bliver unge hørt. Vis der er nogle problemer de ønsker at dele, og man er ikke den eneste om det. 
             Indsend breve til os, kan i forblive helt anonyme, hvis det i er det i ønsker. </p>
             <br>
             <p>Del jeres tanker, følelser, rutiner og udfordringer i har det svært med og find mulige tips og løsninger her hos os. ...Vis mere</p>
+         <div><button id="indsendBrev">INDSEND BREV</button></div>
         </div>
+       
     </div>
 
     <main>
         <section>
             <H2>Søg efter emne</H2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <ul id="searchResults"></ul>
+            </div>
         </section>
-        <section>
+        <section class="podcastContent"> 
             <H2>Nyeste</H2>
-            <div>
+            <div class="podcastContainer">
 
             </div>
             <H2>Populære</H2>

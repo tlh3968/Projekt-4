@@ -10,26 +10,47 @@
         --secondary-bg3: #000000; 
         --text-color1:#000000;
         --text-color2: #ffffff;
+        --font-type: "Archivo", sans-serif; 
 }
 
+body {
+   font-family: "Archivo", sans-serif;
+   font-size: 20px;
+}
+main {
+    padding: 4rem;
+}
 
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    padding-bottom: 2rem;
+}
+/* HEADER STUFF */
 .header_container {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Center items vertically */
+    align-items: flex-end;
     padding: 20px;
+    padding-left: 6rem;
+
 }
 
 #header_image {
-    width: 20%;
+    width: 30rem;
     height: auto;
-    margin-right: 20px;
+    
 }
 
 .header_text {
-    flex: 1; /* Take remaining space */
-    display: flex; /* Display contents as a flex container */
-    flex-direction: column; /* Arrange contents in a column */
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 60%;
+    padding-left: 6rem;
+
 }
 
 .hero_header {
@@ -38,6 +59,39 @@
     width: 100%;
     padding: 40px;
     display: flex;
+    justify-content: end;
     flex-direction: column;
     color: var(--text-color2);
+}
+#indsendBrev {
+    background-color: #ffffff;
+    font-family: var(--font-type);
+    font-weight: bold;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 1000px;
+    border: none;
+}
+
+/* CONTENT*/
+
+.podcastContent {
+    position: relative; /* Set position to relative for parent */
+    margin-bottom: 20px;
+}
+.podcastContainer
+
+.podcastContent::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; /* Position it below the content */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, #1DA8B5, #D2E319); /* Apply gradient */
+}
+
+
+footer {
+    background: #000000;
 }
