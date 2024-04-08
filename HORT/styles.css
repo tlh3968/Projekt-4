@@ -18,28 +18,38 @@ body {
    font-size: 20px;
 }
 main {
-    padding: 4rem;
+    padding: 4rem 11rem 4rem 11rem;
 }
 
 h1 {
-    font-size: 4rem;
-}
-h2 {
-    padding-bottom: 2rem;
+    font-size: 4.5rem;
 }
 /* HEADER STUFF */
+
+.hero_header {
+    background: var(--primary-color);
+    height: auto;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    padding-left: 10rem;
+    padding-top: 4rem;
+    justify-content: end;
+    flex-direction: column;
+    color: var(--text-color2);
+}
 .header_container {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     padding: 20px;
-    padding-left: 6rem;
 
 }
 
 #header_image {
-    width: 30rem;
+    width: 20rem;
     height: auto;
+    align-items: start;
     
 }
 
@@ -48,50 +58,67 @@ h2 {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    width: 60%;
-    padding-left: 6rem;
+    width: 50%;
 
 }
 
-.hero_header {
-    background: var(--primary-color);
-    height: 800px;
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    color: var(--text-color2);
-}
+
 #indsendBrev {
     background-color: #ffffff;
     font-family: var(--font-type);
+    width: 150px;
+    height: auto;
     font-weight: bold;
     padding: 20px;
-    margin: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     border-radius: 1000px;
     border: none;
+    cursor: pointer;
+    transition:.3s ease ;
+}
+
+#indsendBrev:hover {
+ transform: scale(0.95);
 }
 
 /* CONTENT*/
 
+.searchcontainer {
+    margin-bottom: 40px;
+}
+    
+#searchInput {
+    width: 20rem;
+    height: auto;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    transition:.3s ease;
+    border: solid 2px black;
+}
 .podcastContent {
-    position: relative; /* Set position to relative for parent */
     margin-bottom: 20px;
 }
-.podcastContainer
 
 .podcastContent::after {
     content: '';
-    position: absolute;
-    bottom: -3px; /* Position it below the content */
+    bottom: -3px; 
     left: 0;
     width: 100%;
     height: 3px;
-    background-image: linear-gradient(to right, #1DA8B5, #D2E319); /* Apply gradient */
+    background-image: linear-gradient(to right, #1DA8B5, #D2E319);
 }
 
-
+.podcastcontainer {
+    color: var(--secondary-bg3);
+    font-style: var(--font-type);
+    
+}
 footer {
     background: #000000;
 }
