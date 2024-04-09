@@ -18,12 +18,17 @@ body {
    font-size: 20px;
 }
 main {
-    padding: 4rem 11rem 4rem 11rem;
+    padding: 0 11rem 4rem 11rem;
 }
 
 h1 {
     font-size: 4.5rem;
 }
+
+h2 + p {
+    margin-top: 15px;
+}
+
 h3 {
     margin-bottom: 10px;
 }
@@ -110,13 +115,13 @@ header {
 
 }
 
-
-#buttonHeader {
+#button-white, #button-gradient {
     background-color: #ffffff;
     font-family: var(--font-type);
     width: auto;
     height: auto;
     font-weight: bold;
+    font-size: 15px;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -126,11 +131,34 @@ header {
     transition:.3s ease ;
 }
 
-#buttonHeader:hover {
+#button-white:hover, #button-gradient:hover {
  transform: scale(0.95);
 }
 
+#button-gradient {
+    color: white;
+    background: linear-gradient(to right, #1DA8B5, #D2E319);
+}
+
+.blend-image {
+
+}
+
 /* CONTENT*/
+
+section {
+    padding-top: 4rem;
+}
+
+.section-gradient {
+    background: linear-gradient(to right, #1DA8B5, #D2E319);
+    margin: 0 -11rem 0 -11rem;
+    color: white;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 11rem;
+    padding-right: 11rem; 
+}
 
 .searchcontainer {
     margin-bottom: 40px;
@@ -196,4 +224,14 @@ header {
 }
 footer {
     background: #000000;
+}
+
+/* FRONT PAGE */
+.frontpage section {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-links {
+    display: flex;
 }
