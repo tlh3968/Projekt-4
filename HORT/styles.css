@@ -265,6 +265,30 @@ section {
 }
 footer {
     background: #000000;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem 0 7rem 0;
+}
+
+footer * {
+    margin-top: 15px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #D2E319;
 }
 
 /* FRONT PAGE */
