@@ -33,12 +33,21 @@
             </div>
         </div>
         <div class="header_text"> <!--SKAL LAVE HTML/Java TIL VIS MERE DELEN-->
-
-            <p>Ved HØRT bliver unge hørt. Vis der er nogle problemer de ønsker at dele, og man er ikke den eneste om det. 
-            Indsend breve til os, kan i forblive helt anonyme, hvis det i er det i ønsker. </p>
+            
+            <input id="check" type="checkbox">
+            <p>Ved HØRT bliver unge hørt. Vis der er nogle problemer i ønsker at dele, er i ikke de eneste om det.
+            Indsend breve til os, og forbliv helt anonyme hvis det i er det i ønsker. </p>
             <br>
-            <p>Del jeres tanker, følelser, rutiner og udfordringer i har det svært med og find mulige tips og løsninger her hos os. ...Vis mere</p>
-         <div><button id="button-white">Indsend brev</button></div>
+            <p>Del jeres tanker, følelser, rutiner og udfordringer i har det svært med og få hjælp på vejen mod løsninger her hos os...</p>
+            <div class="hiddencontent"> 
+                <br>
+                <p>Værter: Lorem something</p>
+                <br>
+                <p>Produktion: Lorem something</p> 
+                <label for="check">Vis mindre</label>
+            </div>
+            <label for="check">Vis mere</label>
+         <div><button id="button-white">Indsend brev</button>
         </div>
        
     </div>
@@ -54,8 +63,9 @@
             </div>
         </section>
         <section class="podcastContent"> 
-            <H2>Nyeste</H2>
-            <div class="podcast-list">
+            <div class="list">
+                <H2>Nyeste</H2>
+                <div class="podcast-list">
                 <div class="podcastContainer">
                 <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                 <div class="podcast-text">
@@ -74,7 +84,9 @@
                             Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
                     </div>
                     </div>
+                </div>
             </div>
+            <div class="list">
             <H2>Populære</H2>
             <div class="podcast-list">
                 <div class="podcastContainer">
@@ -95,9 +107,11 @@
                             Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
                     </div>
                     </div>
+            </div>
         </section>
         <section class="alle">
-            <h2>Alle</h2>
+            <h2>Alle <span style="font-size: 16px;">4/13</span></h2>
+            <h4>Sorter efter</h4>
             <div class="podcast-list">
                 <div class="podcastContainer">
                 <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
@@ -117,8 +131,8 @@
                             Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
                     </div>
                     </div>
-                    <div class="podcast-list">
-                        <div class="podcastContainer">
+            <div class="podcast-list">
+                <div class="podcastContainer">
                         <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                         <div class="podcast-text">
                             <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 13 | <span style="font-size: 16px;">  46:42 min</span></span></h3>
@@ -127,7 +141,7 @@
                                 For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
                         </div>
                         </div>
-                        <div class="podcastContainer">
+                <div class="podcastContainer">
                             <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                             <div class="podcast-text">
                                 <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 12</span> | <span style="font-size: 16px;">  43:20 min</span></h3>
@@ -136,7 +150,9 @@
                                     Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
                             </div>
                             </div>
-        </section>
+           
+        </section> 
+        <button class="morebutton">Vis 4 mere</button>
     </main>
     <footer>
         
