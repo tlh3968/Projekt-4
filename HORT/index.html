@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HØRT - Forside</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="frontpage">
     <header>
-        <nav></nav>
-        <div class="hero_header">
+        <nav>
+            <img class="hort-logo" src="../HORT/assets/Hort-logo-black.png" alt="hort-logo">
+            <div class="links">
+                <a href="https://hort.dk/bliv-hoert">Bliv hørt</a>
+                <a href="podcast.html">Podcast</a>
+                <a href="https://hort.dk/hoer-andre">Hør andre</a>
+                <a href="https://hort.dk/om-hoert/">Om hørt</a>
+                <div class="search-icon">
+                    <img src="assets/search-icon.svg" alt="Search Icon" width="20" height="20">
+                </div>    
+            </div>
+        </nav>
+        <div class="hero_header" style="background: linear-gradient(to bottom, #D2E319, #1DA8B5), url('images/ung-trist-1.png'); background-size: cover; background-position: center;">
+            <div>
+                <h1>Bliv hørt.<br>Altid.</h1>
+                <p>Har du brug for nogen der vil lytte?<br>HØRT er gratis og anonym rådgivning til dig der er 15-24 år. HØRT har åbent døgnet rundt, alle ugens dage.</p>
+                <div>
+                    <button id="button-white">Chat med os</button>
+                    <button id="button-white">Send os et memo</button>
+                </div>
+            </div>
+            <img class="blend-image" src="images/ung-trist-1.png" alt="sad boi">
         </div>
     </header>
     <main>
+        <section>
+            <div>
+                <h2>Få hjælp til det svære. Helt anonymt.</h2>
+                <p>Har du problemer derhjemme? Føler du dig ensom?<br>
+                    Eller er du i tvivl om noget med seksualitet?<br>
+                    <br>
+                    Det er problemer eller spørgsmål rigtig mange unge går og døjer med i hverdagen. Det kan være svært at finde nogen at snakke med det om, men hos HØRT sidder vores eksperter klar til at hjælpe dig, døgnet rundt.</p>
+                <button id="button-gradient">Start en anonym chat</button>            </div>
+            <img src="assets/chatboxes.svg" alt="chatbokse" style="height: auto; width: 30%; margin-left: 10%;">
+        </section>
+        <section class="section-gradient">
+            <div>
+                <h2>Noget med noget podcast</h2>
+                <p>Lidt fyldetekst om noget med noget podcast, jeg ved dog ikke helt nøjagtigt hvad jeg skal skrive her endnu, så jeg skriver derfor bare noget for at fylde ud.
 
+                    Klik på knappen for at lytte til vores podcast eller noget. Du kan også lade være I guess.</p>
+                <button id="button-white">Start en anonym chat</button>            </div>
+            <img src="X" alt="billede2" style="height: auto; width: 30%; margin-left: 10%;">
+        </section>
+        <section>
+            <img src="assets/phoneicon-placeholder.svg" alt="chatbokse" style="height: auto; width: 15%; margin-right: 20%;">
+            <div>
+                <h2>Noget med memoer </h2>
+                <p>Her kan du skrive noget om memoer, ikke fordi jeg selv synes der er så meget at sige om det.<br>
+                    <br>
+                    Måske forklar lidt fordelene ved at indsende en personlig besked, sammenlignet med en chat. Der er for eksempel en mere personlig forbindelse, og for nogle er det også nemmere at sætte ord på tingende på den måde, i stedet for at skulle skrive det hele ned.</p>
+                <button id="button-gradient">Start en anonym chat</button>            </div>
+        </section>
+        <section class="section-gradient">
+        </section>
+        <div style="margin-top: 4rem;">
+            <h2>Links</h2>
+            <div style="display: flex; justify-content: space-around;">
+                <button id="button-gradient">Chat med os</button>
+                <button id="button-gradient">Optag et memo</button>
+                <button id="button-gradient">Lyt til vores podcast</button>
+                <button id="button-gradient">Lær mere om bisiddere</button>
+            </div>
+        </div>
     </main>
     <footer>
 
