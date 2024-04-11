@@ -1,0 +1,98 @@
+/* Generel baggrund for hjemmesiden */
+body {
+    background-color: #fffeee;
+    margin: 0;
+}
+
+
+/* CSS for navigationsbaren på hjemmesiden */
+.item01 { grid-area: bv; 
+background-color: #F05041;
+padding-top: 30px;
+font-size: 18px;
+}
+
+.item02 { grid-area: fs; 
+background-color: #ffffff;
+padding-top: 35px;
+font-size: 22px;
+}
+
+.item03 { grid-area: fh; 
+background-color: #ffffff;
+padding-top: 35px;
+font-size: 22px;
+}
+
+.item04 { grid-area: vm;
+background-color: #ffffff;
+padding-top: 35px;
+font-size: 22px;
+}
+
+.item05 { grid-area: oo; 
+background-color: #ffffff;
+padding-top: 35px;
+font-size: 22px;
+}
+
+.item06 { grid-area: sb; 
+background-color: #ffffff;
+padding-top: 35px;
+}
+
+.item07 { grid-area: so; 
+background-color: #BECDD6;
+padding-top: 15px;
+font-weight: bold;
+}
+
+.item08 { grid-area: vh; 
+background-color: #BECDD6;
+padding-top: 15px;
+font-weight: bold;
+}
+
+.item09 { grid-area: sn; 
+background-color: #FFDD31;
+padding-top: 35px;
+font-size: 24px;
+font-weight: bold;
+}
+
+nav div {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: grid;
+    grid-template-areas: 
+    'bv fs fh vm oo sb so sn'
+    'bv fs fh vm oo sb vh sn';
+    grid-template-columns: 110px 120px 120px 120px 100px 600px 180px 130px;
+    grid-template-rows: 50px 50px;
+    position: fixed;
+}
+
+nav div a {
+    text-decoration: none;
+    color: black;
+}
+
+.logoTekst01 {
+    color: #ffffff;
+}
+
+
+/* CSS for baggrundsbilledet på forsiden */
+img {
+    width: 100%;
+}
+
+
+/* CSS for hero tekst og undertekst, samt knapper til HØRT, Børnetelefonen osv.*/
+.wrapper01 {
+    padding-left: 250px;
+    padding-right: 250px;
+}
