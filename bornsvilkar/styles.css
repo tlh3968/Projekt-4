@@ -9,7 +9,6 @@ body {
 .item01 { grid-area: bv; 
 background-color: #F05041;
 padding-top: 30px;
-color: #ffffff;
 font-size: 18px;
 }
 
@@ -71,16 +70,24 @@ nav {
     grid-template-areas: 
     'bv fs fh vm oo sb so sn'
     'bv fs fh vm oo sb vh sn';
-    grid-template-columns: 110px 120px 120px 120px 100px auto 180px 130px;
+    grid-template-columns: 110px 120px 120px 120px 100px 600px 180px 130px;
     grid-template-rows: 50px 50px;
+    position: fixed;
+}
+
+nav div a {
+    text-decoration: none;
+    color: black;
+}
+
+.logoTekst01 {
+    color: #ffffff;
 }
 
 
 /* CSS for baggrundsbilledet på forsiden */
-.baggrundsbillede01 {
-    display: block;
+img {
     width: 100%;
-    height: auto;
 }
 
 
