@@ -5,11 +5,12 @@ body {
 }
 
 
+
 /* CSS for navigationsbaren på hjemmesiden */
 .item01 { grid-area: bv; 
 background-color: #F05041;
-padding-top: 30px;
-font-size: 18px;
+padding-top: 20px;
+font-size: 20px;
 }
 
 .item02 { grid-area: fs; 
@@ -55,14 +56,14 @@ font-weight: bold;
 
 .item09 { grid-area: sn; 
 background-color: #FFDD31;
-padding-top: 35px;
+padding-top: 30px;
 font-size: 24px;
 font-weight: bold;
 }
 
 nav div {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
@@ -85,14 +86,69 @@ nav div a {
 }
 
 
+
 /* CSS for baggrundsbilledet på forsiden */
 img {
     width: 100%;
 }
 
 
+
 /* CSS for hero tekst og undertekst, samt knapper til HØRT, Børnetelefonen osv.*/
 .wrapper01 {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: -575px;
+    color: #fffeee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav img {
+    position: absolute;
+    z-index: -99;
+}
+
+.heroTekst01 {
+    padding-right: 500px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.heroUndertekst01 {
+    padding-right: 600px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.heroKnap01 {
+    text-align: end;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -400px;
+}
+
+.heroKnap01 p a {
+    color: #fffeee;
+    text-decoration: none;
+    word-spacing: 20px;
+}
+
+
+
+/* CSS for banner i bunden af hero billedet */
+.bannerWrapper01 {
+    position: absolute;
+    width: 100%;
+    background-color: #F05041;
+    padding: 10px;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.bannerTekst01 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
 }

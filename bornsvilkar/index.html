@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Børns Vilkår - Forside</title>
+    <!--link til css for børns vilkår siderne-->
     <link rel="stylesheet" href="styles.css">
+    <!--dette er et link til fontawesome hvor pile i cirklerne kommer fra-->
+    <script src="https://kit.fontawesome.com/04a4f36b9a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
+
+        
+
+        <!--her er html for navigationsbaren-->
         <nav>
             <div class="item01">
                 <a class="logoTekst01" href="#">
@@ -55,37 +63,60 @@
                 </a>
             </div>
         </nav>
+
+
+
+            <!--her er html for baggrundsbilledet til heroteksten, samt knapperne til børns vilkårs funktioner-->
             <img src="images/trist-barn.jpg" alt="trist barn">
+
             <div class="wrapper01">
-                <h1>
+                <h1 class="heroTekst01">
                     VI TALER HØJT OM SVIGT AF BØRN
                 </h1>
-                <p>
+                <p class="heroUndertekst01">
                     Alt for mange børn i Danmark står alene med deres problemer. 
                     Børns Vilkår kæmper for, at ingen børn i Danmark svigtes – 
                     hverken af deres nærmeste voksne eller af samfundet.
                 </p>
-                <div>
-                    <p class="heroKnap01">
-                        HØRT
+                <div class="heroKnap01">
+                    <p>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-right"></i>
+                            HØRT
+                        </a>
                     </p>
-                </div>
-                <div>
-                    <p class="heroKnap01">
-                        Bisidning
+                    <p>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-right"></i>
+                            Bisidning
+                        </a>
                     </p>
-                </div>
-                <div>
-                    <p class="heroKnap01">
-                        Børnetelefonen 116 111
+                    <p>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-right"></i>
+                            Børnetelefonen <br> 116 111
+                        </a>
                     </p>
-                </div>
-                <div>
-                    <p class="heroKnap01">
-                        Forældretelefonen 35 55 55 57
+                    <p>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-right"></i>
+                            Forældretelefonen <br> 35 55 55 57
+                        </a>
                     </p>
                 </div>
             </div>
+
+
+
+            <!--her er html for nyhedsbanneret i bunden af hero billedet-->
+            <div class="bannerWrapper01">
+                <p class="bannerTekst01">   
+                    NYHEDS BANNER PLACEHOLDER TEKST
+                </p> 
+            </div>
+
+
+
     </header>
 </body>
 </html>
