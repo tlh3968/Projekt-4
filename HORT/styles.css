@@ -323,7 +323,11 @@ footer {
 }
 
 footer * {
-    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+footer > div:first-child * {
+    margin-bottom: 10px;
 }
 
 footer div {
@@ -352,7 +356,7 @@ footer a:hover {
 
 
 
-
+/* PODCAST */
 
 @media screen and (max-width: 992px) {
 
