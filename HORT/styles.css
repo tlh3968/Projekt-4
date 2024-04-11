@@ -18,7 +18,7 @@ body {
    font-size: 20px;
 }
 main {
-    padding: 0 11rem 4rem 11rem;
+    padding: 2rem 11rem 0rem 11rem;
 }
 
 h1 {
@@ -115,6 +115,26 @@ header {
 
 }
 
+.hiddencontent {
+ display: none;   
+}
+
+ #check {
+    display: none;
+ }
+#check:checked ~ .hiddencontent {
+    display: block;
+}
+#check:checked ~ label {
+    display: none;
+}
+
+label  {
+    cursor: pointer;
+    color: var(--secondary-bg1);
+    padding-top: 10px;
+ }
+
 #button-white, #button-gradient {
     background-color: #ffffff;
     font-family: var(--font-type);
@@ -161,7 +181,7 @@ section {
 }
 
 .searchcontainer {
-    margin-bottom: 40px;
+    margin-top: -60px;
 }
     
 #searchInput {
@@ -179,7 +199,6 @@ section {
 }
 .podcastContent {
     margin-bottom: 20px;
-    margin-top: 50px;
 }
 
 .podcastContent::after {
@@ -189,6 +208,11 @@ section {
     width: 100%;
     height: 3px;
     background-image: linear-gradient(to right, #1DA8B5, #D2E319);
+}
+
+.list {
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 .podcast-list {
     display: flex;
@@ -222,8 +246,49 @@ section {
 .alle {
     margin-top: 80px;
 }
+.morebutton {
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-family: var(--font-type);
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 1000px;
+    border: solid var(--secondary-bg1);
+    cursor: pointer;
+    transition:.3s ease ;
+    display: block;
+    justify-content: center;
+}
 footer {
     background: #000000;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem 0 7rem 0;
+}
+
+footer * {
+    margin-top: 15px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #D2E319;
 }
 
 /* FRONT PAGE */
