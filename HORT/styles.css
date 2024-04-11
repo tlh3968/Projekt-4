@@ -15,7 +15,7 @@
 
 body {
    font-family: "Archivo", sans-serif;
-   font-size: 20px;
+   font-size: 18px;
 }
 main {
     padding: 2rem 11rem 0rem 11rem;
@@ -119,13 +119,28 @@ header {
  display: none;   
 }
 
- #check {
+#check {
     display: none;
  }
 #check:checked ~ .hiddencontent {
     display: block;
 }
 #check:checked ~ label {
+    display: none;
+}
+
+.hiddencontent2 {
+    display: none;
+}
+
+#check2 {
+    display: none;
+ }
+#check2:checked ~ .hiddencontent2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+#check2:checked ~ label {
     display: none;
 }
 
@@ -224,33 +239,46 @@ section {
     background-color: var(--secondary-bg3);
     font-style: var(--font-type);
     width: 40%;
-    height: 300px;
+    height: 260px;
     margin: 20px;
     display: flex;
     border-radius: 5px;
     border: solid 5px #D2E319;
     cursor: pointer;
     flex-grow: 1;
+    overflow: hidden;
     
 }
 .podcast_image {
     width: 300px;
-    height: 290px;
+    height: 250px;
+    overflow: hidden;
 }
 .podcast-text {
     padding: 20px;
     color: #ffffff;
     line-height: 1.3;
 }
-
+.hiddenpodcast{
+    display: flex;
+    flex-direction: column;
+}
 .alle {
     margin-top: 80px;
 }
+
+.alle-sorting {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1.2em;
+}
+
 .morebutton {
     margin: 0 auto;
     background-color: #ffffff;
     font-family: var(--font-type);
-    width: auto;
+    width: 180px;
+    text-align: center;
     height: auto;
     font-weight: bold;
     padding: 20px;
