@@ -152,3 +152,196 @@ nav img {
     font-weight: 500;
     text-align: center;
 }
+
+/* Frivillig */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFEEE;
+}
+
+/* ------------banner------------ */
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(87, 87, 87, 0.6),rgba(87, 87, 87, 0.6)),url(images/forside.png);
+    background-size: cover;
+}
+
+.container{
+    padding: 10px 2%;
+}
+
+.content{
+    color: #ffffff;
+    margin-top: 21%;
+    font-size: 30px;
+    padding: 10px 275px 0px;
+}
+
+.content h1{
+    font-size: 84px;
+    margin-top: -150px;
+    margin-bottom: 24px;
+}
+
+.content p{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.square-btn{
+    width: 175px; 
+    height: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.square-btn:hover{
+    background-color: #d8d8d8;
+}
+
+/* ------------bliv frivillig------------ */
+
+#bliv-frivillig{
+    padding: 50px 10%;
+}
+
+.sub-title{
+    margin-top: 70px;
+}
+.frivillig-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.list{
+    overflow: hidden;
+}
+
+.list img{
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+
+.layer{
+    font-size: 20px;
+}
+
+.layer h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.layer p{
+    margin-top: 20px;
+}
+
+.square-btn-red{
+    width: 175px; 
+    height: 50px;
+    margin-top: 20px;
+    background-color: #F05041;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.square-btn-red:hover{
+    background-color: #f05041c4;
+}
+
+/* ------------mød de frivillige------------ */
+
+/* ------------footer------------ */
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #F05041;
+    color: white;
+    padding: 25px 0px 30px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col1{
+    flex-basis: 25%;
+    padding: 0px 100px;
+}
+
+.børnsvilkår{
+    width: 223px;
+}
+
+.brack{
+    width: fit-content;
+    margin: 20px 0px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 110px;
+    position: relative;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo2{
+    width: 180px;
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 15px;
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ffffff;
+    transform: translateY(-5px);
+}
