@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <script src="javascript/countupdate.js" defer></script>
+<script src="javascript/carousel.js"> defer</script>
 </head>
 <body>
     <header>
@@ -67,27 +68,27 @@
         <section class="podcastContent"> 
             <div class="list">
                 <H2>Nyeste</H2>
-                <div class="podcast-list">
+                <div class="podcast-list"> <!--WRAPPER-->
                     <i id="left" class="fa-solid fa-angle-left"></i>
-                <div class="podcastContainer-show">
-                    
+                <ul class="carousel"> <!-- CAROUSEL-->
+                <li class="podcastContainer-show"> <!--CARDS-->
                 <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                 <div class="podcast-text">
-                    <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8 |</span></h3> <span style="font-size: 16px;">  46:42 min</span>
+                    <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8 |</span> <span style="font-size: 16px;">46:42 min</span></h3>
                     <h4>Uddannelsesvalg: </h4>
                     <p> “Jeg følte mig som en fiasko, fordi jeg troede jo jeg var god til dansk” <br><br>
                         For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
                 </div>
                 <div class="podcast-text-query">
-                    <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8 | </span></h3>
+                    <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8 </span></h3>
                     <h4>Uddannelsesvalg: </h4>
                     <p> “Jeg følte mig som en fiasko, fordi jeg troede jo jeg var god til dansk” </p>
                     <br>
                     <h4> 46:42 min</h4>
-                </div>
-                </div>
-                <div class="podcastContainer-show">
-                    <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
+                </div> 
+            </li>
+                <li class="podcastContainer-show">
+                    <img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt="">
                     <div class="podcast-text">
                         <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 7</span> | <span style="font-size: 16px;">  43:20 min</span></h3>
                         <h4>Venskaber: </h4>
@@ -95,48 +96,51 @@
                             Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
                     </div>
                     <div class="podcast-text-query">
-                        <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 7</span> |</h3>
+                        <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 7</span></h3>
                         <h4>Venskaber: </h4>
                         <p>  “Jeg er altid bekymret, og fællesnævneren er altid mine venskaber”</p> 
                         <br>
                         <h4>43:20 min</h4>
                     </div>
+                </dli>
+                <li class="podcastContainer-show"> <!--CARDS-->
+                    <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
+                    <div class="podcast-text">
+                        <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8 |</span><span style="font-size: 16px;">  46:42 min</span></h3>
+                        <h4>Uddannelsesvalg: </h4>
+                        <p> “Jeg følte mig som en fiasko, fordi jeg troede jo jeg var god til dansk” <br><br>
+                            For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
                     </div>
+                    <div class="podcast-text-query">
+                        <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8 </span></h3>
+                        <h4>Uddannelsesvalg: </h4>
+                        <p> “Jeg følte mig som en fiasko, fordi jeg troede jo jeg var god til dansk” </p>
+                        <br>
+                        <h4> 46:42 min</h4>
+                    </div> 
+                </li>
+                <li class="podcastContainer-show">
+                        <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
+                        <div class="podcast-text">
+                            <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 7</span> | <span style="font-size: 16px;">  43:20 min</span></h3>
+                            <h4>Venskaber: </h4>
+                            <p>  “Jeg er altid bekymret, og fællesnævneren er altid mine venskaber”<br> <br>
+                                Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
+                        </div>
+                        <div class="podcast-text-query">
+                            <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 7</span> |</h3>
+                            <h4>Venskaber: </h4>
+                            <p>  “Jeg er altid bekymret, og fællesnævneren er altid mine venskaber”</p> 
+                            <br>
+                            <h4>43:20 min</h4>
+                        </div>
+                    </li>
+                </ul>
                     <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
             <div class="list">
             <H2>Populære</H2>
-            <div class="podcast-list">
-                <div class="podcastContainer">
-                <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
-                <div class="podcast-text">
-                    <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8| <span style="font-size: 16px;">  46:42 min</span></span></h3>
-                    <h4>Uddannelsesvalg: </h4>
-                    <p> “Jeg følte mig som en fiasko, fordi jeg troede jo jeg var god til dansk” <br><br>
-                        For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
-                </div>
-                <div class="podcast-text-query">
-                    <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8 | <span style="font-size: 16px;">  46:42 min</span></span></h3>
-                    <h4>Uddannelsesvalg: </h4>
-                    <p> “Jeg følte mig som en fiasko, fordi jeg troede jo jeg var god til dansk” </p>
-                </div>
-                </div>
-                <div class="podcastContainer">
-                    <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
-                    <div class="podcast-text">
-                        <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 7</span> | <span style="font-size: 16px;">  43:20 min</span></h3>
-                        <h4>Venskaber: </h4>
-                        <p>  “Jeg er altid bekymret, og fællesnævneren er altid mine venskaber”<br> <br>
-                            Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
-                    </div>
-                    <div class="podcast-text-query">
-                        <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 7</span> | <span style="font-size: 16px;">  43:20 min</span></h3>
-                        <h4>Venskaber: </h4>
-                        <p>  “Jeg er altid bekymret, og fællesnævneren er altid mine venskaber”</p>
-                    </div>
-                    </div>
-            </div>
         </section>
         <section class="section-gradient"></section>
         <section class="alle">
@@ -145,8 +149,8 @@
                 <h2>Alle <span id="episodeCount" style="font-size: 16px;">4/8</span></h2>
                 <h4>Sorter efter</h4>
             </div>
-            <div class="podcast-list">
-                <div class="podcastContainer">
+            <div class="podcast-list2">
+                <div class="podcastContainer-alle">
                 <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                 <div class="podcast-text">
                     <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 8 | <span style="font-size: 16px;">  46:42 min</span></span></h3>
@@ -155,7 +159,7 @@
                         For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
                 </div>
                 </div>
-                <div class="podcastContainer">
+                <div class="podcastContainer-alle">
                     <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                     <div class="podcast-text">
                         <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 7</span> | <span style="font-size: 16px;">  43:20 min</span></h3>
@@ -163,8 +167,8 @@
                         <p>  “Jeg er altid bekymret, og fællesnævneren er altid mine venskaber”<br> <br>
                             Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
                     </div>
-                    </div>
-                    <div class="podcastContainer">
+                </div>
+                <div class="podcastContainer-alle">
                         <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                         <div class="podcast-text">
                             <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 6 | <span style="font-size: 16px;">  46:42 min</span></span></h3>
@@ -172,8 +176,8 @@
                             <p> “Jeg følte mig som en fiasko, fordi jeg troede jo jeg var god til dansk” <br><br>
                                 For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
                         </div>
-                        </div>
-                        <div class="podcastContainer">
+                 </div>
+                <div class="podcastContainer-alle">
                             <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                             <div class="podcast-text">
                                 <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 5 | <span style="font-size: 16px;">  46:42 min</span></span></h3>
@@ -181,11 +185,11 @@
                                 <p> “Jeg følte mig som en fiasko, fordi jeg troede jo jeg var god til dansk” <br><br>
                                     For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
                             </div>
-                            </div>
+                    </div>
                 </div>  
             <div class="podcast-list, hiddencontent2">
                 <div class="hiddenpodcast">
-                    <div class="podcastContainer">
+                    <div class="podcastContainer-alle">
                     <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                     <div class="podcast-text">
                         <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 4 | <span style="font-size: 16px;">  38:22 min</span></span></h3>
@@ -194,7 +198,7 @@
                             For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
                     </div>
                     </div>
-                    <div class="podcastContainer">
+                    <div class="podcastContainer-alle">
                         <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                         <div class="podcast-text">
                             <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 3</span> | <span style="font-size: 16px;">  48:26 min</span></h3>
@@ -203,7 +207,7 @@
                                 Relationer udvikler sig, og relationer kan glide ind og ud, men det kan være svært at være i. For hvordan plejer man sine venskaber?</p>
                         </div>
                     </div>
-                    <div class="podcastContainer">
+                    <div class="podcastContainer-alle">
                             <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                             <div class="podcast-text">
                                 <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 2 | <span style="font-size: 16px;">  42:26 min</span></span></h3>
@@ -212,7 +216,7 @@
                                     For nogle er det ikke så svært, men mange er i tvivl. De får blæst hovedet fuldt af, at nu skal de 'vælge for livet', men hvordan gør man det?</p>
                             </div>
                     </div>
-                    <div class="podcastContainer">
+                    <div class="podcastContainer-alle">
                                 <div><img class="podcast_image" src="images/Screenshot_2023-08-25_181923.webp" alt=""></div>
                                 <div class="podcast-text">
                                     <h3> <span style="color:#D2E319">PODCAST</span> <span style="color:white">| EPISODE 1 | <span style="font-size: 16px;">  46:42 min</span></span></h3>
@@ -223,7 +227,7 @@
                     </div>
                     
                 </div>
-                <label class="podcastcContainer, morebutton" for="check2">Vis 4 mindre</label>
+                <label class="podcastcContainer-alle, morebutton" for="check2">Vis 4 mindre</label>
             </div>
             <label class="morebutton" for="check2" onclick="updateEpisodeCount()" >Vis 4 mere</label>
         </section> 

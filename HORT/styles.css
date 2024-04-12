@@ -129,6 +129,8 @@ header {
     display: none;
 }
 
+
+
 label  {
     cursor: pointer;
     color: var(--secondary-bg1);
@@ -182,6 +184,7 @@ section {
 
 .searchcontainer {
     margin-top: -60px;
+    margin-bottom: -100px;
 }
     
 #searchInput {
@@ -213,20 +216,56 @@ section {
 .list {
     margin-top: 70px;
     margin-bottom: 30px;
+  
 }
 .podcast-list {
+    max-width: 11000px;
+    width: 100%;  
+    padding: 20px 20px 20px 20px;
+    position: relative;
+}
+.podcast-list2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;  
 }
+.podcast-list .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/2));
+    gap: 55px;
+    overflow: hidden;
+}
+.podcast-list i {
+    height: 50px;
+    width: 50px;
+    background: #D2E319;
+    align-content: center;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10000px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
 
-.podcastContainer {
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.podcast-list i:first-child {
+    left: -22px
+}
+.podcast-list i:last-child {
+    right: -22px
+}
+
+
+.podcastContainer-alle {
     background-color: var(--secondary-bg3);
     font-style: var(--font-type);
     width: 40%;
     height: 260px;
-    margin: 20px;
     display: flex;
+    margin: 20px;
     border-radius: 5px;
     border: solid 5px #D2E319;
     cursor: pointer;
@@ -237,20 +276,21 @@ section {
 .podcastContainer-show {
     background-color: var(--secondary-bg3);
     font-style: var(--font-type);
-    width: 40%;
-    height: 260px;
-    margin: 20px;
+    width: 700px;
+    height: auto;
     display: flex;
     border-radius: 5px;
     border: solid 5px #D2E319;
     cursor: pointer;
     flex-grow: 1;
+    object-fit: cover;
 }
-
+.carousel .podcastContainer-show{
+ list-style: none;
+}
 .podcast_image {
     width: 300px;
-    height: 250px;
-    overflow: hidden;
+    height: 100%;
 }
 .podcast-text {
     padding: 20px;
@@ -263,6 +303,7 @@ section {
     color: #ffffff;
     line-height: 1.3;
 }
+
 .hiddenpodcast{
     display: flex;
     flex-wrap: wrap;
@@ -374,19 +415,34 @@ h1 {
 .podcast_image {
     display: none;
 }
-
+.podcast-list i {
+    scale: 0.8;
+}
+.podcast-list i:first-child {
+    left: -10px
+}
+.podcast-list i:last-child {
+    right: -10px
+}
 #header_image {
     padding-bottom: 10px;
 }
 .podcastContainer-show {
-    width: 320px;    
+    width: 250px;    
     height: auto;
 }
 h3 {
     font-size: 1.3em;
 }
 .podcast-list {
+    align-items: center;
     justify-content: center;
+    display: grid;
+}
+
+.podcast-list .carousel {
+    grid-auto-columns: calc((100%));
+    gap: 70px;
 }
 
 #check ~ label {
@@ -399,8 +455,9 @@ h3 {
 }
 .podcastContent {
     margin-top: -100px;
-    width: min-content;
+    max-width: fit-content;
 }
+
 .hero_header {
     flex-direction: column;
     padding: 10px;
