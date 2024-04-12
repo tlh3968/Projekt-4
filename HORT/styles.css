@@ -273,6 +273,10 @@ section {
     overflow: hidden;
     
 }
+.carousel.dragging .podcastContainer-show {
+    cursor: grab;
+    user-select: none;
+}
 .podcastContainer-show {
     background-color: var(--secondary-bg3);
     font-style: var(--font-type);
