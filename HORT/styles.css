@@ -129,8 +129,6 @@ header {
     display: none;
 }
 
-
-
 label  {
     cursor: pointer;
     color: var(--secondary-bg1);
