@@ -1,12 +1,7 @@
 /* Generel baggrund for hjemmesiden */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #fffeee;
+    margin: 0;
 }
 
 
@@ -79,6 +74,7 @@ nav {
     grid-template-columns: 110px 120px 120px 120px 100px 600px 180px 130px;
     grid-template-rows: 50px 50px;
     position: fixed;
+    z-index: 2;
 }
 
 nav div a {
@@ -160,125 +156,70 @@ nav img {
 
 
 
-/*-----------------------------------------------------------------------------------------------------------------------*/
-
-/* Frivillig */
-
-/* Skal vi fjerne en af * og body? bare fordi det ikke giver mening at have det 2 gange? */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+/* CSS for første del af hjemmesiden, alt under den første overskrift */
+.wrapper02 {
+    padding-left: 175px;
+    padding-right: 175px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    background-color: #FFFEEE;
+/* Første del af fyldet */
+.icons01 {
+    width: 75%;
 }
 
-/* ------------banner------------ */
-
-.banner{
-    width: 100%;
-    height: 90vh;
-    background-image: linear-gradient(rgba(87, 87, 87, 0.6),rgba(87, 87, 87, 0.6)),url(images/forside.png);
-    background-size: cover;
+.overskrift01 {
+    margin-top: 250px;
+    font-size: 60px;
 }
 
-.container{
-    padding: 10px 2%;
+.infoBox01 {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
-.content{
-    color: #ffffff;
-    margin-top: 21%;
+.infoBox01 h2 {
     font-size: 30px;
-    padding: 10px 275px 0px;
 }
 
-.content h1{
-    font-size: 84px;
-    margin-top: -150px;
-    margin-bottom: 24px;
-}
-
-.content p{
-    font-size: 24px;
-    margin-bottom: 24px;
-}
-
-.square-btn{
-    width: 175px; 
-    height: 50px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border-radius: 2px;
-    font-size: 16px;
-    cursor: pointer;
-}
-  
-.square-btn:hover{
-    background-color: #d8d8d8;
-}
-
-/* ------------bliv frivillig------------ */
-
-#bliv-frivillig{
-    padding: 50px 10%;
-}
-
-.sub-title{
-    margin-top: 70px;
-}
-.frivillig-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.list{
-    overflow: hidden;
-}
-
-.list img{
-    width: 100%;
-    height: 60%;
-    display: block;
-}
-
-.layer{
+.infoBox01 p {
     font-size: 20px;
 }
 
-.layer h3{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.infoBox02 {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
-.layer p{
-    margin-top: 20px;
+.infoBox02 h2 {
+    font-size: 30px;
 }
 
-.square-btn-red{
-    width: 175px; 
-    height: 50px;
-    margin-top: 20px;
-    background-color: #F05041;
-    color: rgb(255, 255, 255);
-    border-radius: 2px;
-    font-size: 16px;
-    cursor: pointer;
+.infoBox02 p {
+    font-size: 20px;
 }
 
-.square-btn-red:hover{
-    background-color: #f05041c4;
+.item10 {
+    padding-right: 200px;
 }
 
-/* ------------mød de frivillige------------ */
+.item12 {
+    padding-right: 200px;
+}
 
-/* ------------footer------------ */
+/* Anden del af fyldet */
+.overskrift02 {
+    font-size: 60px;
+}
 
+
+
+
+
+
+/* CSS for footer, lavet af Emil */
 footer{
     width: 100%;
     position: relative;
@@ -355,3 +296,4 @@ ul li a{
     color: #ffffff;
     transform: translateY(-5px);
 }
+/* slutning på CSS for footer */
