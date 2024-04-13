@@ -183,8 +183,7 @@ section {
 }
 
 .searchcontainer {
-    margin-top: -60px;
-    margin-bottom: -100px;
+    margin: 20px;
 }
     
 #searchInput {
@@ -202,6 +201,7 @@ section {
 }
 .podcastContent {
     margin-bottom: 20px;
+    margin-top: -100px;
 }
 
 .podcastContent::after {
@@ -234,8 +234,15 @@ section {
     grid-auto-flow: column;
     grid-auto-columns: calc((100%/2));
     gap: 55px;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
 }
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
 .podcast-list i {
     height: 50px;
     width: 50px;
@@ -273,6 +280,10 @@ section {
     overflow: hidden;
     
 }
+.carousel.dragging{
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
 .carousel.dragging .podcastContainer-show {
     cursor: grab;
     user-select: none;
@@ -291,6 +302,7 @@ section {
 }
 .carousel .podcastContainer-show{
  list-style: none;
+ scroll-snap-align: start;
 }
 .podcast_image {
     width: 300px;

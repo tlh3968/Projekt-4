@@ -1,42 +1,69 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let isDragging = false;
-    let startX, startScrollLeft;
-    let carousel = document.querySelector('.carousel');
-    let carouselWidth = carousel.scrollWidth;
-    let originalContent = carousel.innerHTML;
+    // Carousel 1
+    let carousel1 = document.querySelector('.carousel:first-of-type');
+    let arrowBtns1 = carousel1.parentElement.querySelectorAll(".podcast-list i");
 
-    // Clone the carousel content and append it before and after the original content
-    carousel.innerHTML += originalContent + originalContent;
+    setupCarousel(carousel1, arrowBtns1);
 
-    let dragStart = (e) => {
-        isDragging = true;
-        carousel.classList.add("dragging");
-        startX = e.pageX;
-        startScrollLeft = carousel.scrollLeft;
-    };
+    // Carousel 2
+    let carousel2 = document.querySelector('.carousel:last-of-type');
+    let arrowBtns2 = carousel2.parentElement.querySelectorAll(".podcast-list i");
 
-    let dragging = (e) => {
-        if (!isDragging) return;
+    setupCarousel(carousel2, arrowBtns2);
 
-        let delta = e.pageX - startX;
-        let newScrollLeft = startScrollLeft - delta;
+    function setupCarousel(carousel, arrowBtns) {
+        let isDragging = false;
+        let startX, startScrollLeft;
+        let firstCardWidth = carousel.querySelector(".podcastContainer-show").offsetWidth;
+        let carouselChildren = [...carousel.children];
 
-        // Continuously loop the carousel content
-        if (newScrollLeft < 0) {
-            newScrollLeft += carouselWidth * 2; // Loop to the end
-        } else if (newScrollLeft > carouselWidth * 2) {
-            newScrollLeft -= carouselWidth * 2; // Loop to the beginning
-        }
+        let podcastPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-        carousel.scrollLeft = newScrollLeft;
-    };
+        carouselChildren.slice(-podcastPerView).reverse().forEach(card => {
+            carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+        });
 
-    let dragStop = () => {
-        isDragging = false;
-        carousel.classList.remove("dragging");
-    };
+        carouselChildren.slice(0, -podcastPerView).forEach(card => {
+            carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+        });
 
-    carousel.addEventListener('mousedown', dragStart);
-    carousel.addEventListener('mousemove', dragging);
-    document.addEventListener('mouseup', dragStop);
+        // add event listeners for the arrow buttons to scroll the carousel left and right
+        arrowBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+            })
+        });
+
+        let dragStart = (e) => {
+            isDragging = true;
+            carousel.classList.add("dragging");
+            startX = e.pageX;
+            startScrollLeft = carousel.scrollLeft;
+        };
+
+        let dragging = (e) => {
+            if (!isDragging) return;
+
+            let delta = e.pageX - startX;
+            let newScrollLeft = startScrollLeft - delta;
+
+            // Continuously loop the carousel content
+            if (newScrollLeft < 0) {
+                newScrollLeft += carousel.scrollWidth * 2; // Loop to the end
+            } else if (newScrollLeft > carousel.scrollWidth * 2) {
+                newScrollLeft -= carousel.scrollWidth * 2; // Loop to the beginning
+            }
+
+            carousel.scrollLeft = newScrollLeft;
+        };
+
+        let dragStop = () => {
+            isDragging = false;
+            carousel.classList.remove("dragging");
+        };
+
+        carousel.addEventListener('mousedown', dragStart);
+        carousel.addEventListener('mousemove', dragging);
+        document.addEventListener('mouseup', dragStop);
+    }
 });
