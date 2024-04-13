@@ -149,7 +149,7 @@ label  {
     width: auto;
     height: auto;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -199,13 +199,13 @@ section {
 }
 
 .searchcontainer {
-    margin: 20px;
+    margin: 10px;
 }
     
 #searchInput {
     width: 20rem;
     height: auto;
-    font-weight: bold;
+    font-size: 18px;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 10px;

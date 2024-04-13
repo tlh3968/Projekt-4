@@ -65,5 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
         carousel.addEventListener('mousedown', dragStart);
         carousel.addEventListener('mousemove', dragging);
         document.addEventListener('mouseup', dragStop);
+
+        //console.log("Carousel setup complete:", carousel);
+        //console.log("Arrow buttons:", arrowBtns);
+        //console.log("First card width:", firstCardWidth);
+        //console.log("Podcast per view:", podcastPerView);
     }
 });

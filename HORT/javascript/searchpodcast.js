@@ -1,48 +1,34 @@
-// Define an array of keywords you want to prioritize
-const keywords = ["venskab", "uddannelsesvalg", "relationer"];
-
 // Function to filter content based on keywords
 function filterContent() {
-    const allSections = document.querySelectorAll(".podcastContent");
-    const showFiltered = document.getElementById("showFiltered").checked;
+    const searchInput = document.getElementById("searchInput");
+    const searchValue = searchInput.value.toLowerCase();
+    const contentSections = document.querySelectorAll(".podcastContainer-alle");
 
-    allSections.forEach((section) => {
+    contentSections.forEach((section) => {
         const sectionText = section.textContent.toLowerCase();
-        const containsKeyword = keywords.some((keyword) => sectionText.includes(keyword));
+        const containsKeyword = sectionText.includes(searchValue);
 
-        if (showFiltered) {
-            section.style.display = containsKeyword ? "block" : "none";
+        if (!containsKeyword) {
+            section.classList.add("hidden");
         } else {
-            section.style.display = "block";
+            section.classList.remove("hidden");
         }
     });
 }
 
-// Add a button to toggle filtered/unfiltered view
-const toggleButton = document.createElement("button");
-toggleButton.textContent = "Toggle Filtered View";
-toggleButton.addEventListener("click", filterContent);
-document.body.appendChild(toggleButton);
+// Function to restore original content
+function restoreContent() {
+    const contentSections = document.querySelectorAll(".podcastContainer-alle");
+    contentSections.forEach((section) => {
+        section.classList.remove("hidden");
+    });
+}
 
-// Add a checkbox to restore original content
-const restoreCheckbox = document.createElement("input");
-restoreCheckbox.type = "checkbox";
-restoreCheckbox.id = "showFiltered";
-restoreCheckbox.addEventListener("change", filterContent);
-document.body.appendChild(restoreCheckbox);
-
-// Example content sections (customize as needed)
-const contentSections = [
-    "This is a friendship section. Lorem ipsum...",
-    "Here's an apple section. Lorem ipsum...",
-    "And now, an orange section. Lorem ipsum...",
-    "Other irrelevant content. Lorem ipsum...",
-];
-
-// Create and append content sections to the page
-contentSections.forEach((content, index) => {
-    const section = document.createElement("div");
-    section.className = "content-section";
-    section.textContent = content;
-    document.body.appendChild(section);
+// Add event listeners to search input and button for filtering and restoring content
+document.getElementById("searchInput").addEventListener("input", filterContent);
+document.getElementById("searchInput").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        filterContent();
+    }
 });
+document.getElementById("restoreButton").addEventListener("click", restoreContent);

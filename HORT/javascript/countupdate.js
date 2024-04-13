@@ -7,3 +7,5 @@ function updateEpisodeCount() {
       episodeCount.textContent = "4/8";
     }
   }
+
+  
