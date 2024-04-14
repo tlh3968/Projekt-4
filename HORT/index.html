@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HØRT - Forside</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body class="frontpage">
     <header>
         <nav>
-            <img class="hort-logo" src="../HORT/assets/Hort-logo-black.png" alt="hort-logo">
-            <div class="links">
-                <a href="https://hort.dk/bliv-hoert">Bliv hørt</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="https://hort.dk/hoer-andre">Hør andre</a>
-                <a href="https://hort.dk/om-hoert/">Om hørt</a>
-                <div class="search-icon">
-                    <img src="assets/search-icon.svg" alt="Search Icon" width="20" height="20">
-                </div>    
-            </div>
+            <form class="search-form search-hidden">
+                <input class="search-input" type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+                <button id="cancel-button">
+                    <img src="assets/cross.svg" alt="Cancel">
+                </button>
+            </form>
+            <div id="nav-content">
+                <img class="hort-logo" src="../HORT/assets/Hort-logo-black.png" alt="hort-logo">
+                <div class="links">
+                    <a href="https://hort.dk/bliv-hoert">Bliv hørt</a>
+                    <a href="podcast.html">Podcast</a>
+                    <a href="https://hort.dk/hoer-andre">Hør andre</a>
+                    <a href="https://hort.dk/om-hoert/">Om hørt</a>
+                    <div class="search-icon">
+                        <img src="assets/search-icon.svg" alt="Search Icon" width="20" height="20">
+                    </div>    
+                </div>
+            </div>    
         </nav>
         <div class="hero_header">
             <h1>Bliv hørt.<br>Altid.</h1>
@@ -40,7 +50,7 @@
                 <button id="button-gradient">Start en anonym chat</button>            </div>
             <img src="assets/chatboxes.svg" alt="chatbokse" style="height: auto; width: 30%; margin-left: 10%;">
         </section>
-        <section class="section-gradient" style="background: none; background-image: url(../HORT/images/unge-med-tlf.jpg); background-position: right; background-size: cover;">
+        <section class="section-gradient" style="background: none; background-image: url(../HORT/images/section-phone.jpg); background-position: right; background-size: cover;">
             <div>
                 <h2>Vil du have hjælp uden at tage kontakt?<br> Så prøv vores podcast</h2>
                 <p>Går du og brænder inde med nogle spørgsmål? Er du nysgerrig efter, om andre også døjer med samme problemer som dig? Eller mangler du bare noget samvær?
@@ -95,5 +105,6 @@
             <a href="https://hort.dk/cookiepolitik/" style="font-size: 15px;">Cookiepolitik</a>
         </div>
     </footer>
+    <script src="../HORT/javascript/frontpage-javascript.js"></script>
 </body>
 </html>
