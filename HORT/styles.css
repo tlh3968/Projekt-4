@@ -163,6 +163,10 @@ label  {
  transform: scale(0.95);
 }
 
+header #button-white:hover {
+    color: #1DA8B5;
+}
+
 #button-gradient {
     color: white;
     background: linear-gradient(to right, #1DA8B5, #D2E319);
@@ -270,7 +274,6 @@ section {
     cursor: pointer;
     position: absolute;
     top: 50%;
-
     transform: translateY(-50%);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -279,6 +282,11 @@ section {
 }
 .podcast-list i:last-child {
     right: -22px
+}
+.podcast-list i:hover {
+    background-color: #1DA8B5;
+    scale: 0.95;
+    color: white;
 }
 
 
@@ -295,6 +303,10 @@ section {
     flex-grow: 1;
     overflow: hidden;
     
+}
+
+.podcastContainer-alle:hover {
+    border: solid 5px #1DA8B5;
 }
 .carousel.dragging{
     scroll-behavior: auto;
@@ -316,6 +328,9 @@ section {
     flex-grow: 1;
     object-fit: cover;
 }
+.podcastContainer-show:hover {
+    border: solid 5px #1DA8B5;
+}
 .carousel .podcastContainer-show{
  list-style: none;
  scroll-snap-align: start;
@@ -323,6 +338,10 @@ section {
 .podcast_image {
     width: 300px;
     height: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 .podcast-text {
     padding: 20px;
@@ -383,6 +402,12 @@ section {
     display: block;
     justify-content: center;
 }
+
+.morebutton:hover {
+    color: #1DA8B5;
+    border: solid var(--secondary-bg2);
+}
+
 footer {
     background: #000000;
     color: white;
