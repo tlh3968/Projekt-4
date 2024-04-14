@@ -2,28 +2,35 @@ const searchIcon = document.querySelector('.search-icon');
 const searchForm = document.querySelector('.search-form');
 const navContent = document.querySelector('#nav-content');
 const cancelButton = document.querySelector('#cancel-button');
+const nav = document.querySelector('nav'); // Vælger nav elementet
 
-// Add click event listener to the search icon
+// Tilføj eventlistener til søgeikonet
 searchIcon.addEventListener('click', function() {
-    // Toggle the 'search-hidden' class on the search form
-    searchForm.classList.toggle('search-hidden');
+    // Skift 'search-hidden' klassen på søgeformularen
+    searchForm.classList.toggle('hiddencontent');
 
-    // Toggle the visibility of the nav content
+    // Skift synligheden på nav indholdet
     if (navContent.style.display === 'none') {
         navContent.style.display = 'flex';
     } else {
         navContent.style.display = 'none';
     }
+
+    // Tilføj justify-content: end til nav elementet
+    nav.style.justifyContent = 'end';
 });
 
-// Add click event listener to the cancel button
+// Tilføj en eventlistener til cancel knappen
 cancelButton.addEventListener('click', function(event) {
-    // Prevent the default form submission behavior
+    // Fjern normal funktion på formularindsendelsen (reloader normalt siden)
     event.preventDefault();
 
-    // Hide the search form
-    searchForm.classList.add('search-hidden');
+    // Skjuler hele søgefeltet (hiddencontent har display: none)
+    searchForm.classList.add('hiddencontent');
     
-    // Show the nav content
+    // Viser nav indholdet igen
     navContent.style.display = 'flex';
+
+    // Fjerner justify-content: end fra nav elementet igen
+    nav.style.justifyContent = '';
 });

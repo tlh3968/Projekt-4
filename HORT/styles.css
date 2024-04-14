@@ -73,6 +73,35 @@ nav {
     color: black;
 }
 
+.search-input {
+    border: none;
+    height: 60px;
+    width: 70vw;
+    font-size: 18px;
+}
+
+nav button {
+    border: none;
+    background: none;
+}
+
+nav .search-form {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-form > * {
+    margin: 0 10px 0 10px;
+}
+
+nav .submit-button {
+    height: 40px;
+    background: linear-gradient(to right, #1DA8B5, #D2E319);
+    width: 70px;
+    border-radius: 1000px;
+    color: white;
+}
+
 .links > a:hover {
     text-decoration: underline;
 }
@@ -127,29 +156,18 @@ header {
 
 }
 
-.search-hidden {
-    display: none;
-}
-
-.search-input {
-    border: none;
-}
-
-nav button {
-    border: none;
-    background: none;
-}
-
 .hiddencontent {
- display: none;   
+    display: none!important;   
 }
 
 #check {
     display: none;
  }
+
 #check:checked ~ .hiddencontent {
     display: block;
 }
+
 #check:checked ~ label {
     display: none;
 }

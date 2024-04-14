@@ -16,18 +16,27 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">
-                <img class="hort-logo" src="../HORT/assets/Hort-logo-black.png" alt="hort-logo">
-            </a>            
-            <div class="links">
-                <a href="https://hort.dk/bliv-hoert">Bliv hørt</a>
-                <a href="podcast.html">Podcast</a>
-                <a href="https://hort.dk/hoer-andre">Hør andre</a>
-                <a href="https://hort.dk/om-hoert/">Om hørt</a>
-                <div class="search-icon">
-                    <img src="assets/search-icon.svg" alt="Search Icon" width="20" height="20">
-                </div>    
-            </div>
+            <form class="search-form hiddencontent">
+                <input class="search-input" type="text" placeholder="Hvad leder du efter?">
+                <button class="submit-button" type="submit">Søg</button>
+                <button id="cancel-button" style="height: 35px; padding: 10px;">
+                    <img src="assets/cross.svg" alt="Cancel">
+                </button>
+            </form>
+            <div id="nav-content">
+                <a href="../HORT/index.html">
+                    <img class="hort-logo" src="../HORT/assets/Hort-logo-black.png" alt="hort-logo">
+                </a>
+                <div class="links">
+                    <a href="https://hort.dk/bliv-hoert">Bliv hørt</a>
+                    <a href="podcast.html">Podcast</a>
+                    <a href="https://hort.dk/hoer-andre">Hør andre</a>
+                    <a href="https://hort.dk/om-hoert/">Om hørt</a>
+                    <div class="search-icon">
+                        <img src="assets/search-icon.svg" alt="Search Icon" width="20" height="20">
+                    </div>    
+                </div>
+            </div>    
         </nav>
         <div class="hero_header">
         <div class="header_container"> 
@@ -338,5 +347,6 @@
             <a href="https://hort.dk/cookiepolitik/" style="font-size: 15px;">Cookiepolitik</a>
         </div>
     </footer>
+    <script src="../HORT/javascript/frontpage-javascript.js"></script>
 </body>
 </html>
