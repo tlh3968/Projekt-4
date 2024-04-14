@@ -45,8 +45,14 @@ nav {
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     z-index: 999;
+}
+
+#nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .hort-logo {
@@ -92,7 +98,7 @@ header {
     flex-direction: column;
     color: var(--text-color2);
     position: relative;
-    background-image: url(images/ung-trist-1.png);
+    background-image: url(images/hero-image.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,6 +127,19 @@ header {
 
 }
 
+.search-hidden {
+    display: none;
+}
+
+.search-input {
+    border: none;
+}
+
+nav button {
+    border: none;
+    background: none;
+}
+
 .hiddencontent {
  display: none;   
 }
@@ -134,8 +153,6 @@ header {
 #check:checked ~ label {
     display: none;
 }
-
-
 
 label  {
     cursor: pointer;
