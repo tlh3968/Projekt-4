@@ -207,10 +207,6 @@ header #button-white:hover {
     background: linear-gradient(to right, #1DA8B5, #D2E319);
 }
 
-.blend-image {
-
-}
-
 /* FRONT PAGE */
 .frontpage section {
     display: flex;
@@ -240,6 +236,32 @@ section {
 .searchcontainer {
     margin: 10px;
 }
+.searchcontainer p {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+#restoreButton {
+    background-color:#D2E319;
+    font-family: var(--font-type);
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    transition:.3s ease ;
+}
+
+#restoreButton:hover {
+    transform: scale(0.95);
+    font-size: 15px;
+   }
     
 #searchInput {
     width: 20rem;
@@ -279,7 +301,7 @@ section {
     padding: 20px 20px 20px 20px;
     position: relative;
 }
-.podcast-list2 {
+.podcastlist2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;  

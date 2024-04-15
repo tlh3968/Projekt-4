@@ -1,34 +1,46 @@
-// Function to filter content based on keywords
-function filterContent() {
-    const searchInput = document.getElementById("searchInput");
-    const searchValue = searchInput.value.toLowerCase();
-    const contentSections = document.querySelectorAll(".podcastContainer-alle");
+// JavaScript for søgefunktion og gendannelsesfunktion
 
-    contentSections.forEach((section) => {
-        const sectionText = section.textContent.toLowerCase();
-        const containsKeyword = sectionText.includes(searchValue);
-
-        if (!containsKeyword) {
-            section.classList.add("hidden");
-        } else {
-            section.classList.remove("hidden");
+function searchAndFilter() {
+    // Hent inputfeltet og søgeordet
+    var input, filter, podcasts, podcastTitle, i;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    // Hent alle podcast-containere
+    podcasts = document.querySelectorAll('.podcastContainer-alle');
+  
+    // Gennemgå hver podcast-container
+    for (i = 0; i < podcasts.length; i++) {
+        // Find podcast-titlen i den aktuelle container
+        podcastTitle = podcasts[i].querySelector('.podcast-text');
+        // Hvis podcast-titlen findes
+        if (podcastTitle) {
+            // Hent teksten i podcast-titlen
+            var titleText = podcastTitle.innerText.toUpperCase();
+            // Hvis søgeordet er en del af podcast-titlen, vis containeren, ellers skjul den
+            if (titleText.indexOf(filter) > -1) {
+                podcasts[i].style.display = '';
+            } else {
+                podcasts[i].style.display = 'none';
+            }
         }
-    });
-}
-
-// Function to restore original content
-function restoreContent() {
-    const contentSections = document.querySelectorAll(".podcastContainer-alle");
-    contentSections.forEach((section) => {
-        section.classList.remove("hidden");
-    });
-}
-
-// Add event listeners to search input and button for filtering and restoring content
-document.getElementById("searchInput").addEventListener("input", filterContent);
-document.getElementById("searchInput").addEventListener("keyup", function(event) {
-    if (event.key === "Enter") {
-        filterContent();
     }
-});
-document.getElementById("restoreButton").addEventListener("click", restoreContent);
+}
+
+function restorePodcastlist2() {
+    // Find alle skjulte podcast-containere
+    var hiddenPodcasts = document.querySelectorAll('.podcastContainer-alle');
+    // Gennemgå hver skjult podcast-container og vis den
+    hiddenPodcasts.forEach(function(podcast) {
+        podcast.style.display = '';
+    });
+
+    document.getElementById('searchInput').value = '';
+}
+
+// Lyt efter tastetryk i søgefeltet
+document.getElementById('searchInput').addEventListener('keyup', searchAndFilter);
+
+// Lyt efter klik på gendannelsesknappen
+document.getElementById('restoreButton').addEventListener('click', restorePodcastlist2);
+
+
