@@ -157,7 +157,7 @@ header {
 }
 
 .hiddencontent {
-    display: none!important;   
+    display: none;   
 }
 
 #check {
@@ -215,7 +215,18 @@ header #button-white:hover {
 
 .site-links {
     display: flex;
+    justify-content: space-around;
+    background-color: red;
 }
+
+@media screen and (min-width: 1160px) {
+    .site-links {
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+    }
+}
+
 
 /* CONTENT*/
 
@@ -497,7 +508,6 @@ footer a {
 footer a:hover {
     color: #D2E319;
 }
-
 
 
 /* PODCAST */

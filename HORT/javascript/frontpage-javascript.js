@@ -7,17 +7,11 @@ const nav = document.querySelector('nav'); // Vælger nav elementet
 // Tilføj eventlistener til søgeikonet
 searchIcon.addEventListener('click', function() {
     // Skift 'search-hidden' klassen på søgeformularen
-    searchForm.classList.toggle('hiddencontent');
-
-    // Skift synligheden på nav indholdet
-    if (navContent.style.display === 'none') {
-        navContent.style.display = 'flex';
-    } else {
-        navContent.style.display = 'none';
-    }
+    searchForm.style.display = 'flex'; // Vis search form
+    navContent.style.display = 'none'; // Skjul nav content
 
     // Tilføj justify-content: end til nav elementet
-    nav.style.justifyContent = 'end';
+    nav.style.justifyContent = 'center';
 });
 
 // Tilføj en eventlistener til cancel knappen
@@ -26,10 +20,8 @@ cancelButton.addEventListener('click', function(event) {
     event.preventDefault();
 
     // Skjuler hele søgefeltet (hiddencontent har display: none)
-    searchForm.classList.add('hiddencontent');
-    
-    // Viser nav indholdet igen
-    navContent.style.display = 'flex';
+    searchForm.style.display = 'none'; // Skjul search form
+    navContent.style.display = 'flex'; // Vis nav content
 
     // Fjerner justify-content: end fra nav elementet igen
     nav.style.justifyContent = '';
