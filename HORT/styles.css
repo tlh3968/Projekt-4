@@ -285,10 +285,11 @@ section {
     justify-content: space-between;  
 }
 .podcast-list .carousel {
+    width: 100rem;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100%/2));
-    gap: 55px;
+    gap: 14px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -354,7 +355,7 @@ section {
 .podcastContainer-show {
     background-color: var(--secondary-bg3);
     font-style: var(--font-type);
-    width: 700px;
+    width: 44rem;
     height: auto;
     display: flex;
     margin: 20px;
