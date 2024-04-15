@@ -357,6 +357,7 @@ section {
     width: 700px;
     height: auto;
     display: flex;
+    margin: 20px;
     border-radius: 5px;
     border: solid 5px #D2E319;
     cursor: pointer;
@@ -478,6 +479,10 @@ footer a:hover {
 
 
 /* PODCAST */
+
+@media screen and (max-width: 1200px) {
+
+}
 
 @media screen and (max-width: 992px) {
 
