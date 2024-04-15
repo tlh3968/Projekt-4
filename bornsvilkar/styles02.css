@@ -42,6 +42,19 @@ background-color: #ffffff;
 padding-top: 35px;
 }
 
+#sogefelt {
+padding: 10px;
+padding-right: 300px;
+}
+
+#sogeKnap {
+color: #000000;
+background-color: #ffffff;
+border: 0px;
+margin-left: 5px;
+font-size: 25px;
+}
+
 .item07 { grid-area: so; 
 background-color: #BECDD6;
 padding-top: 15px;
@@ -152,6 +165,35 @@ nav img {
     font-size: 25px;
     font-weight: 500;
     text-align: center;
+    animation: moveBanner01 20s linear infinite;
+}
+
+.bannerTekst02 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    animation: moveBanner02 20s linear infinite;
+    margin-top: -57px;
+}
+
+@keyframes moveBanner01 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveBanner02 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles02.css">
     <!--dette er et link til fontawesome hvor pile i cirklerne kommer fra-->
     <script src="https://kit.fontawesome.com/04a4f36b9a.js" crossorigin="anonymous"></script>
-    <script src="javascript/forside/searchbar.js"></script>
+    <script src="javascript/forside/searchbar.js" defer></script>
 
 </head>
 <body>
@@ -18,7 +18,7 @@
         <!--her er html for navigationsbaren-->
         <nav>
             <div class="item01">
-                <a class="logoTekst01" href="#">
+                <a class="logoTekst01" href="index.html">
                     BØRNS VILKÅR
                 </a>
             </div>
@@ -43,23 +43,10 @@
                 </a>
             </div>
 
-
-
-            <!--test for søgefelt-->
             <div class="item06">
                 <input type="text" id="sogefelt" placeholder="...">
-                <button onclick="search()">Søg</button>
+                <button onclick="search()" id="sogeKnap"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-
-
-            <!--
-            <div class="item06">
-                <a href="#">
-                    Searchbar
-                </a>
-            </div>
-            -->
-
 
             <div class="item07">
                 <a href="#">
@@ -125,10 +112,12 @@
             <!--her er html for nyhedsbanneret i bunden af hero billedet-->
             <div class="bannerWrapper01">
                 <p class="bannerTekst01">   
-                    NYHEDS BANNER PLACEHOLDER TEKST
+                    BØRNETELEFONEN OG HØRT HAVDE I MARTS 400 SAMTALER OM SELVMORDSTANKER ELLER SELVMORDSFORSØG
+                </p>
+                <p class="bannerTekst02">   
+                    BØRNETELEFONEN OG HØRT HAVDE I MARTS 400 SAMTALER OM SELVMORDSTANKER ELLER SELVMORDSFORSØG
                 </p> 
             </div>
-
 
     </header>
 
