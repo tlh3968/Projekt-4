@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let arrowBtns2 = carousel2.parentElement.querySelectorAll(".podcast-list i");
 
     setupCarousel(carousel2, arrowBtns2);
-
     function setupCarousel(carousel, arrowBtns) {
         let isDragging = false;
         let startX, startScrollLeft;

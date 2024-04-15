@@ -290,7 +290,7 @@ section {
     grid-auto-flow: column;
     grid-auto-columns: calc((100%/2));
     gap: 14px;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-width: 0;
@@ -358,7 +358,7 @@ section {
     width: 44rem;
     height: auto;
     display: flex;
-    margin: 20px;
+    margin: 18px;
     border-radius: 5px;
     border: solid 5px #D2E319;
     cursor: pointer;
@@ -481,8 +481,69 @@ footer a:hover {
 
 /* PODCAST */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
+    .podcastContent{
+        scale: 0.9;
+        background-color: #1DA8B5;
+        justify-content: center;
+    }
+    p {
+        font-size: 15px;
+    }
+    .podcastContainer-show {
+        width: 25rem;
+        height: auto;
+        margin: 20px;
+    }
+    .podcast_image {
+        display: none;
+    }
+    .podcast-list .carousel {
+        width: 60rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100%/2));
+        gap: 16px;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+        margin-left: 2.5em;
+    }
+    .podcast-list i {
+        height: 50px;
+        width: 50px;
+        background: #D2E319;
+        align-content: center;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 10000px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+    .podcast-list i:first-child {
+        left: 2.2rem;
+    }
+    .podcast-list i:last-child {
+        right: 2.2rem; }
 
+     .podcast-text-query {
+        display:block;
+           }
+    .podcast-text {
+        display: none;
+        }
+    ul .carousel {
+        width: 10em;
+        height: auto;
+    }
+    .podcastContainer-alle {
+        width: 400px;    
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -490,6 +551,7 @@ footer a:hover {
 .podcast-text {
     display: none;
 }
+
 
 .podcast-text-query {
  display:block;
@@ -518,6 +580,12 @@ h1 {
 .podcastContainer-show {
     width: 250px;    
     height: auto;
+}
+.podcastContainer-alle {
+    width: 250px;    
+    height: auto;
+    display: grid;
+    grid-auto-columns: calc((100%/2));
 }
 h3 {
     font-size: 1.3em;
