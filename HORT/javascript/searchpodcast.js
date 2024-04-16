@@ -24,6 +24,19 @@ function searchAndFilter() {
             }
         }
     }
+
+    if (!matchFound) {
+        var noMatchMessage = document.createElement('p');
+        noMatchMessage.textContent = "Der er intet om dette emne";
+        var podcastList = document.querySelector('.podcastlist2');
+        podcastList.appendChild(noMatchMessage);
+    } else {
+        // If match found, remove any existing no match message
+        var existingMessage = document.querySelector('.podcastlist2 p');
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+    }
 }
 
 function restorePodcastlist2() {

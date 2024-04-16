@@ -207,6 +207,10 @@ header #button-white:hover {
     background: linear-gradient(to right, #1DA8B5, #D2E319);
 }
 
+.header_text_query {
+    display: none !important;
+}
+
 /* FRONT PAGE */
 .frontpage section {
     display: flex;
@@ -272,6 +276,8 @@ section {
 #restoreButton:hover {
     transform: scale(0.95);
     font-size: 15px;
+    background-color: #1DA8B5;
+    color: #ffffff;
    }
     
 #searchInput {
@@ -511,26 +517,30 @@ footer a:hover {
 
 
 /* PODCAST */
-@media screen and(max-width: 1600px) {
+@media screen and (max-width: 1550px) {
     .carousel {
-        grid-auto-columns: calc((100% - 42px) / 2); 
+        grid-auto-columns: calc((100% - 22px) / 2); 
     }
-    .podcastContainer-show {
-       width: 50%;
+    .podcast-text {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-bottom: 20px;
     }
+
+ 
 }
 
-@media screen and(max-width: 1500px) {
+@media screen and (max-width: 1500px) {
     .podcast_image {
-        width: 20;
+        width: 30%;
         display: none;
+
     }
 }
 
 @media screen and (max-width: 1450px) {
     .podcastContent{
         scale: 0.9;
-        background-color: #1DA8B5;
         justify-content: center;
     }
     p {
@@ -571,7 +581,7 @@ footer a:hover {
         left: 2.2rem;
     }
     .podcast-list i:last-child {
-        right: 2.2rem; }
+        right: 0.6rem; }
 
      .podcast-text-query {
         display:block;
@@ -591,6 +601,12 @@ footer a:hover {
 
 @media screen and (max-width: 992px) {
 
+.header_text_query {
+        display: flex;
+}
+.header_text {
+    display: none;
+}
 .podcast-text {
     display: none;
 }
@@ -605,9 +621,6 @@ main {
 h1 {
     font-size: 3em;
 }
-.podcast_image {
-    display: none;
-}
 .podcast-list i {
     scale: 0.8;
 }
@@ -621,14 +634,13 @@ h1 {
     padding-bottom: 10px;
 }
 .podcastContainer-show {
-    width: 250px;    
+    width: 80%;    
     height: auto;
 }
 .podcastContainer-alle {
-    width: 250px;    
+    width: 80%;    
     height: auto;
     display: grid;
-    grid-auto-columns: calc((100%/2));
 }
 h3 {
     font-size: 1.3em;
@@ -652,6 +664,10 @@ h3 {
     display: flex;
     flex-direction: column;
 }
+
+.restoreButton {
+    scale: 0.2;
+}
 .podcastContent {
     margin-top: -100px;
     max-width: fit-content;
@@ -667,7 +683,7 @@ h3 {
 .header_text {
     padding: 0;
     padding-top: 10px;
-    width: 300px;
+    width: 100%;
     align-items:center;
     line-height: 1.5em;
     text-align: left;
