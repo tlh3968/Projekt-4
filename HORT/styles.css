@@ -207,10 +207,6 @@ header #button-white:hover {
     background: linear-gradient(to right, #1DA8B5, #D2E319);
 }
 
-.header_text_query {
-    display: none !important;
-}
-
 /* FRONT PAGE */
 .frontpage section {
     display: flex;
@@ -331,7 +327,6 @@ section {
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: 0;
 }
 .carousel::-webkit-scrollbar {
     display: none;
@@ -359,7 +354,6 @@ section {
 }
 .podcast-list i:hover {
     background-color: #1DA8B5;
-    scale: 0.95;
     color: white;
 }
 
@@ -526,21 +520,23 @@ footer a:hover {
         padding-left: 10px;
         padding-bottom: 20px;
     }
-
+    .podcast_image {
+        width: 250px;
+        height: auto;
+    }
  
 }
 
 @media screen and (max-width: 1500px) {
     .podcast_image {
-        width: 30%;
+        max-width: 30%;
         display: none;
 
     }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1400px) {
     .podcastContent{
-        scale: 0.9;
         justify-content: center;
     }
     p {
@@ -553,14 +549,9 @@ footer a:hover {
     }
     .podcast-list .carousel {
         width: 100%;
-        display: grid;
-        grid-auto-flow: column;
         grid-auto-columns: calc((100%));
         gap: 16px;
         overflow-x: hidden;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        scrollbar-width: 0;
         margin-left: 2.5em;
     }
     .podcast-list i {
@@ -601,12 +592,6 @@ footer a:hover {
 
 @media screen and (max-width: 992px) {
 
-.header_text_query {
-        display: flex;
-}
-.header_text {
-    display: none;
-}
 .podcast-text {
     display: none;
 }
@@ -622,7 +607,6 @@ h1 {
     font-size: 3em;
 }
 .podcast-list i {
-    scale: 0.8;
 }
 .podcast-list i:first-child {
     left: -10px
@@ -666,7 +650,8 @@ h3 {
 }
 
 .restoreButton {
-    scale: 0.2;
+    width: 50%;
+    height: auto;
 }
 .podcastContent {
     margin-top: -100px;
