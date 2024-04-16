@@ -178,7 +178,7 @@ label  {
     padding-top: 10px;
  }
 
-#button-white, #button-gradient {
+.button-white, .button-gradient {
     background-color: #ffffff;
     font-family: var(--font-type);
     width: auto;
@@ -194,15 +194,15 @@ label  {
     transition:.3s ease ;
 }
 
-#button-white:hover, #button-gradient:hover {
+.button-white:hover, .button-gradient:hover {
  transform: scale(0.95);
 }
 
-header #button-white:hover {
+header .button-white:hover {
     color: #1DA8B5;
 }
 
-#button-gradient {
+.button-gradient {
     color: white;
     background: linear-gradient(to right, #1DA8B5, #D2E319);
 }
@@ -681,7 +681,7 @@ h3 {
     line-height: 1.2em;
     padding-bottom: 0px;
 }
-#button-white {
+.button-white {
     margin-top: 0px;
 }
 }
