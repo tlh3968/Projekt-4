@@ -9,6 +9,8 @@
     <!--dette er et link til fontawesome hvor pile i cirklerne kommer fra-->
     <script src="https://kit.fontawesome.com/04a4f36b9a.js" crossorigin="anonymous"></script>
     <script src="javascript/forside/searchbar.js" defer></script>
+    <script src="javascript/forside/visKnap.js" defer></script>
+    <script src="javascript/forside/email.js" defer></script>
 
 </head>
 <body>
@@ -193,8 +195,32 @@
                 </p>
             </div>
         </div>
-        <button onclick="visMereKnap()" id="visKnap">Vis 3 mere</button>
-        <!--NOTE TIL SENERE: DER SKAL NOK EN MERE NYHEDS DEL-->
+
+
+        <button id="visKnap">Vis 3 mere</button>
+
+        <div class="infoBox04" id="ekstraBox01">
+            <div class="item17 skjult">
+                <img class="nyhedsBilleder01" src="images/nyhed01.png" alt="nyhed01">
+                <p class="clickbait01">
+                    HVIS MYNDIGHEDERNE VAR ET FORÆLDREPAR, VILLE ANBRAGTE BØRN OG UNGE FORMENTLIG BLIVE ANBRAGT PÅ NY
+                </p>
+            </div>
+            <div class="item18 skjult">
+                <img class="nyhedsBilleder01" src="images/nyhed02.png" alt="nyhed02">
+                <p class="clickbait01">
+                    SKOLEBØRN HAR OGSÅ BRUG FOR OMSORG – OG POLITIKERNE SKAL SKABE RAMMERNE FOR DET
+                </p>
+            </div>
+            <div class="item19 skjult">
+                <img class="nyhedsBilleder01" src="images/nyhed03.png" alt="nyhed02">
+                <p class="clickbait01">
+                    BØRNS VILKÅR: ANBRINGELSESSTEDER KAN GØRE BØRN OG UNGE SÅ UTRYGGE, AT DE STIKKER AF
+                </p>
+            </div>
+        </div>
+
+
 
     </div>
 
@@ -218,6 +244,7 @@
                 <input type="text" placeholder="Fornavn" id="fornavn" name="fornavn" required>
                 <input type="text" placeholder="Efternavn" id="efternavn" name="efternavn" required>
                 <input type="text" placeholder="E-mail" id="email" name="email" required>
+                <button id="tilmeldKnap">Tilmeld</button>
             </div>
             <p class="terAndCor">
                 Børns Vilkår passer godt på dine personoplysninger, og vi behandler dine personoplysninger i overensstemmelse med den gældende databeskyttelsesforordning og databeskyttelseslov.
