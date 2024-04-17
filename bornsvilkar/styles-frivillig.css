@@ -97,7 +97,7 @@ nav div a {
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(87, 87, 87, 0.6),rgba(87, 87, 87, 0.6)),url(picture/forside.png);
+    background-image: linear-gradient(rgba(87, 87, 87, 0.6),rgba(87, 87, 87, 0.6)),url(images/forside.png);
     background-size: cover;
 }
 
