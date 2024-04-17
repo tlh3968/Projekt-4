@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let arrowBtns2 = carousel2.parentElement.querySelectorAll(".podcast-list i");
 
     setupCarousel(carousel2, arrowBtns2);
+
     function setupCarousel(carousel, arrowBtns) {
         let isDragging = false;
         let startX, startScrollLeft;
@@ -36,14 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
         let dragStart = (e) => {
             isDragging = true;
             carousel.classList.add("dragging");
-            startX = e.pageX;
+            startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
             startScrollLeft = carousel.scrollLeft;
+            e.preventDefault(); // forhindrer standardbrowseradfærd for tekstvalg eller rulning
         };
 
         let dragging = (e) => {
             if (!isDragging) return;
 
-            let delta = e.pageX - startX;
+            let delta = (e.type === 'mousemove' ? e.pageX : e.touches[0].pageX) - startX;
             let newScrollLeft = startScrollLeft - delta;
 
             // Continuously loop the carousel content
@@ -56,14 +58,20 @@ document.addEventListener('DOMContentLoaded', () => {
             carousel.scrollLeft = newScrollLeft;
         };
 
-        let dragStop = () => {
+        let dragStop = (e) => {
+            if (isDragging) {
+                e.preventDefault(); // forhindrer klik på kortene, hvis karusellen blev trukket
+            }
             isDragging = false;
             carousel.classList.remove("dragging");
         };
 
         carousel.addEventListener('mousedown', dragStart);
+        carousel.addEventListener('touchstart', dragStart);
         carousel.addEventListener('mousemove', dragging);
-        document.addEventListener('mouseup', dragStop);
+        carousel.addEventListener('touchmove', dragging);
+        document.addEventListener('mouseup', (e) => dragStop(e));
+        document.addEventListener('touchend', (e) => dragStop(e));
 
         //console.log("Carousel setup complete:", carousel);
         //console.log("Arrow buttons:", arrowBtns);
