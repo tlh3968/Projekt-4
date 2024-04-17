@@ -102,6 +102,23 @@ nav .submit-button {
     color: white;
 }
 
+.suggestions-container {
+    margin: 0 !important;
+    padding: 0 0 5vh 10vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestions-container > a {
+    color: gray;
+}
+
 .links > a:hover {
     text-decoration: underline;
 }
