@@ -4,29 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>frivillig</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-frivillig.css">
         <script src="https://kit.fontawesome.com/90976bdb22.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<!-- navigationsbar -->
+
+<nav>
+<div class="item01">
+    <a class="logoTekst01" href="index.html">
+        BØRNS VILKÅR
+    </a>
+</div>
+<div class="item02">
+    <a href="#">
+        Find svar
+    </a>
+</div>
+<div class="item03">
+    <a href="#">
+        Find hjælp
+    </a>
+</div>
+<div class="item04">
+    <a href="frivillig.html">
+        Vær med
+    </a>
+</div>
+<div class="item05">
+    <a href="#">
+        Om os
+    </a>
+</div>
+
+<div class="item06">
+    <input type="text" id="sogefelt" placeholder="...">
+    <button onclick="search()" id="sogeKnap"><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
+
+<div class="item07">
+    <a href="#">
+        SKOLEOPLÆG
+    </a>
+</div>
+<div class="item08">
+    <a href="#">
+        VIKSOMHEDER
+    </a>
+</div>
+<div class="item09">
+    <a href="#">
+        STØT NU
+    </a>
+</div>
+</nav>
+
 <!-- background banner -->
 
-    <div class="banner">
-        <div class="container">
-        </div>
-        <div class="content">
-            <h1>VI HAR BRUG FOR DIG!</h1>
-            <p>Døgnet rundt kontakter børn og unge BørneTelefonen og HØRT, fordi de har brug for en voksen til at trøste,<br>hjælpe eller bare lytte.</p>
+<div class="banner">
+    <div class="container">
+</div>
+    <div class="content">
+        <h1>VI HAR BRUG FOR DIG!</h1>
+        <p>Døgnet rundt kontakter børn og unge BørneTelefonen og HØRT, fordi de har brug for en voksen til at trøste,<br>hjælpe eller bare lytte.</p>
     
-            <p>For at være frivillig hos Børns Vilkår skal du have en børnefaglig baggrund.</p>
+        <p>For at være frivillig hos Børns Vilkår skal du have en børnefaglig baggrund.</p>
                 
-            <p>Dette gælder dog ikke, hvis du vil være facilitator på gruppechatten eller moderator på Børn hjælper børn.</p>
+        <p>Dette gælder dog ikke, hvis du vil være facilitator på gruppechatten eller moderator på Børn hjælper børn.</p>
 
-            <button class="square-btn">LÆS MERE</button>
-        </div>
+        <button class="square-btn">LÆS MERE</button>
     </div>
+</div>
 
 <!-- Tag testen -->
+
+<div id="tag-testen">
+    <div class="container">
+        <div class="box-border">
+            <h1>TAG TESTEN OG TILMELD DIG</h1>
+            <p>Find ud af, hvilke muligheder du har for at blive 
+                frivillig hos Børns Vilkår, og tilmeld dig.<br> 
+                Vi glæder os til at modtage din ansøgning.</p>
+
+            <div class="quiz">
+                <h2 id="question">Question goes here</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Over 21 år</button>
+                    <button class="btn">Mellem 18-20 år</button>
+                    <button class="btn">Mellem 12-17 år</button>
+                </div>
+
+                <button id="next-btn">Next</button>
+            </div>
+
+            <p>LIGE NU MANGLER VI ISÆR FRIVILLIGE PÅ BØRNETELEFONEN 
+                I AARHUS OG I BREVKASSEN!</p>
+
+                <button class="square-btn-red-1">Børnetelefonen Aarhus</button>
+                <button class="square-btn-red-2">Brevkassen</button>
+
+        </div>
+    </div>
+</div>
 
 <!-- bliv frivillig -->
 
@@ -58,7 +138,7 @@
 
                     <p>Vær frivillig i Aarhus, København eller hjemmefra.</p>
 
-                    <button class="square-btn-red">LÆS MERE</button>
+                    <button class="square-btn-red2">LÆS MERE</button>
                 </div>
             </div>
             <div class="list">
@@ -71,7 +151,7 @@
 
                     <p>Vær frivillig i Aarhus eller København.</p>
 
-                    <button class="square-btn-red">LÆS MERE</button>
+                    <button class="square-btn-red3">LÆS MERE</button>
                 </div>
             </div>
         </div>
@@ -80,64 +160,109 @@
 
 <!-- mød de frivillige -->
 
+<div id="mød-dem">
+    <div class="container">
+        <div class="hero-trans">
+            <img src="images/frivillige.png">
+            <div class="layer-hero">
+                <h1>MØD DE FRIVILLIGE</h1>
+                <p>Der er mange måder at være frivillig på i Børns Vilkår. Og de frivillige<br> 
+                    kommer fra mange forskellige faglige baggrunde. Fælles for dem alle er,<br> 
+                    at de brænder for at give børn og unge en stemme</p>
+
+                    <button class="square-btn">LÆS MERE</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Hvorfor blive frivillig -->
+
+<div id="hvorfor-frivillig">
+    <div class="container-box">
+        <div class="box-1">
+        <h1>HVORFOR BLIVE FRIVILLIG HOS BØRNS VILKÅR?</h1>
+            <p>Børnetelefonen har en 35 år lang historie, som er fyldt med meningsfuldt, 
+                fleksibelt og vigtigt frivilligt arbejde, som er afgørende for at alle 
+                børn og unge i Danmark bliver støttet og lyttet til.</p> 
+
+            <p>Du arbejder 8 timer om måneden som frivillig, og vi lægger stor vægt 
+                på, at arbejdstiden er fleksibel. Det betyder, at du bestemmer, hvornår 
+                og hvor du vil arbejde, og vi har mange rådgivningstilbud, som egner 
+                sig rigtig godt til at arbejde frivilligt hjemmefra.</p>
+                
+            <p>Som frivillig rådgiver hos BørneTelefonen kan du opleve at blive 
+                kontaktet med svære problematikker og temaer. Men du er aldrig alene. 
+                Uanset hvor du arbejder fra, vil du altid være i kontakt med 
+                rådgivningsansvarlige og andre frivillige, som kan give vejledning 
+                og hjælp. Det er i høj grad takket være de mange frivillige, der 
+                altid har været afgørende for, at BørneTelefonen kan drives.</p>
+                
+            <p>Vil du være med?</p>
+            </div>
+            <div class="box-2">
+            <img src="images/kid.png">
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- footer -->
     
-    <footer>
-        <div class="row">
-            <div class="col1">
-                <img src="images/børnsvilkår.png" class="børnsvilkår">
-                <p class="brack">Hovednummer 35 55 55 59
-                    <br> 
-                    Trekronergade 26
-                    <br>  
-                    2500 Valby
-                </p>
+<footer>
+    <div class="row">
+        <div class="col1">
+            <img src="images/børnsvilkår.png" class="børnsvilkår">
+            <p class="brack">Hovednummer 35 55 55 59
+                <br> 
+                Trekronergade 26
+                <br>  
+                2500 Valby
+            </p>
         
-                <p class="brack">Carl Blochs Gade 37
-                    <br> 
-                    8000 Aarhus C
-                </p>
+            <p class="brack">Carl Blochs Gade 37
+                <br> 
+                8000 Aarhus C
+            </p>
         
-                <p class="brack">CVR: 10634792
-                    <br> 
-                    Konto nr.: 7134 1161116
-                    <br>  
-                    MobilePay-nr.: 50553
-                </p>
+            <p class="brack">CVR: 10634792
+                <br> 
+                Konto nr.: 7134 1161116
+                <br>  
+                MobilePay-nr.: 50553
+            </p>
 
-                <span class="mail-link">SIKKER@mail-link</span>
-            </div>
-            <div class="col">
-                <h3></h3>
-                <ul>
-                    <li><a href="https://bornsvilkar.dk/presse/">Presse</a></li>
-                    <li><a href="https://bornsvilkar.career.emply.com/ledige-stilllinger">Ledige stillinger</a></li>
-                    <li><a href="https://bornsvilkar.dk/arv-og-testamente/">Arv og testamente</a></li>
-                    <li><a href="https://bornsvilkar.dk/lokaleleje/">Lej vores lokaler</a></li>
-                    <li><a href="https://bornsvilkar.dk/stot/institutionsmedlem/">Bliv institutionsmedlem</a></li>
-                    <li><a href="https://bornsvilkar.dk/whistleblowerordning/">Whistleblowing</a></li>
-                    <li><a href="https://bornsvilkar.dk/podcasts/">Podcasts</a></li>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/bornsvilkar/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@BoernsVilkaar"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/boernsvilkaar"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-                </ul>
-            </div>
-            <div class="col"></div>
-            <div class="col">                
-                <img src="images/børnetelefonen.png" class="logo2">
-                <p class="brack">SMS eller Ring til Børnetelefonen 116 111<br>
-                    HovedTelefon: 35 55 55 59<br>
-                    Email: bv@bornsvilkar.dk
-                </p>
-                <img src="images/hørt.png" class="logo2">
-                <p class="brack">Email: bv@bornsvilkar.dk
-                </p>
-            </div>
+            <span class="mail-link">SIKKER@mail-link</span>
         </div>
-    </footer>
+        <div class="col">
+            <h3></h3>
+            <ul>
+                <li><a href="https://bornsvilkar.dk/presse/">Presse</a></li>
+                <li><a href="https://bornsvilkar.career.emply.com/ledige-stilllinger">Ledige stillinger</a></li>
+                <li><a href="https://bornsvilkar.dk/arv-og-testamente/">Arv og testamente</a></li>
+                <li><a href="https://bornsvilkar.dk/lokaleleje/">Lej vores lokaler</a></li>
+                <li><a href="https://bornsvilkar.dk/stot/institutionsmedlem/">Bliv institutionsmedlem</a></li>
+                <li><a href="https://bornsvilkar.dk/whistleblowerordning/">Whistleblowing</a></li>
+                <li><a href="https://bornsvilkar.dk/podcasts/">Podcasts</a></li>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bornsvilkar/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@BoernsVilkaar"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/boernsvilkaar"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            </ul>
+        </div>
+        <div class="col">                
+            <img src="images/børnetelefonen.png" class="logo2">
+            <p class="brack">SMS eller Ring til Børnetelefonen 116 111<br>
+                HovedTelefon: 35 55 55 59<br>
+                Email: bv@bornsvilkar.dk
+             </p>
+            <img src="images/hørt.png" class="logo2">
+            <p class="brack">Email: bv@bornsvilkar.dk
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="javascript/frivillig/tag-testen.js"></script>
 </body>
 </html>
