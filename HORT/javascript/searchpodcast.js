@@ -48,7 +48,7 @@ function restorePodcastlist2() {
     });
 
     document.getElementById('searchInput').value = '';
-}
+}s
 
 // Lyt efter tastetryk i søgefeltet
 document.getElementById('searchInput').addEventListener('keyup', searchAndFilter);

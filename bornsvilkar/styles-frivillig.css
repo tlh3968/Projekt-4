@@ -1,0 +1,501 @@
+/* General styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFEEE;
+}
+
+/* CSS for navigationsbaren på hjemmesiden */
+
+.item01 { grid-area: bv; 
+    background-color: #F05041;
+    padding-top: 20px;
+    font-size: 20px;
+}
+    
+.item02 { grid-area: fs; 
+    background-color: #ffffff;
+    padding-top: 35px;
+    font-size: 22px;
+}
+    
+.item03 { grid-area: fh; 
+    background-color: #ffffff;
+    padding-top: 35px;
+    font-size: 22px;
+}
+    
+.item04 { grid-area: vm;
+    background-color: #ffffff;
+    padding-top: 35px;
+    font-size: 22px;
+}
+    
+.item05 { grid-area: oo; 
+    background-color: #ffffff;
+    padding-top: 35px;
+    font-size: 22px;
+}
+    
+.item06 { grid-area: sb; 
+    background-color: #ffffff;
+    padding-top: 35px;
+}
+    
+.item07 { grid-area: so; 
+    background-color: #BECDD6;
+    padding-top: 15px;
+    font-weight: bold;
+}
+    
+.item08 { grid-area: vh; 
+    background-color: #BECDD6;
+    padding-top: 15px;
+    font-weight: bold;
+}
+    
+.item09 { grid-area: sn; 
+    background-color: #FFDD31;
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+    
+nav div {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
+nav {
+    display: grid;
+     grid-template-areas: 
+    'bv fs fh vm oo sb so sn'
+    'bv fs fh vm oo sb vh sn';
+
+    grid-template-columns: 110px 120px 120px 120px 100px 600px 180px 130px;
+    grid-template-rows: 50px 50px;
+    position: fixed;
+}
+    
+nav div a {
+    text-decoration: none;
+    color: black;
+}
+    
+.logoTekst01 {
+    color: #ffffff;
+}
+
+/* ------------banner------------ */
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(87, 87, 87, 0.6),rgba(87, 87, 87, 0.6)),url(images/forside.png);
+    background-size: cover;
+}
+
+.container{
+    padding: 10px 2%;
+}
+
+.content{
+    color: #ffffff;
+    margin-top: 21%;
+    font-size: 30px;
+    padding: 50px 11%;
+}
+
+.content h1{
+    font-size: 84px;
+    margin-top: -150px;
+    margin-bottom: 24px;
+}
+
+.content p{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.square-btn{
+    width: 175px; 
+    height: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+  
+.square-btn:hover{
+    background-color: #d8d8d8;
+}
+
+/* ------------tag testen------------ */
+
+#tag-testen{
+    padding: 50px 10%;
+}
+
+.box-border{
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #F05041;
+    border-radius: 5px;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.box-border h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.box-border p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.box-border h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.btn{
+    background: white;
+    color: #222;
+    font-weight: 500;
+    width: 18%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #ffffff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: #F05041;
+    color: #FFF;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    border-radius: 2px;
+    margin: 20px 0 0;
+    cursor: pointer;
+    display: none;
+}
+
+.square-btn-red-1{
+    width: 200px; 
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-right: 20px;
+    background-color: rgb(240, 80, 65);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.square-btn-red-2{
+    width: 150px; 
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: rgb(240, 80, 65);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.square-btn-red-1:hover{
+    background-color: #f05142c4;
+}
+
+.square-btn-red-2:hover{
+    background-color: #f05142c4;
+}
+
+/* ------------bliv frivillig------------ */
+
+#bliv-frivillig{
+    padding: 50px 10%;
+}
+
+.sub-title{
+    margin-top: 10px;
+    font-size: 50px;
+}
+.frivillig-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.list{
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.list img{
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+
+.layer{
+    font-size: 20px;
+}
+
+.layer h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.layer p{
+    margin-top: 20px;
+}
+
+.square-btn-red{
+    width: 175px; 
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: rgb(240, 80, 65);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.square-btn-red2{
+    width: 175px; 
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    background-color: rgb(240, 80, 65);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.square-btn-red3{
+    width: 175px; 
+    height: 50px;
+    margin-top: 78px;
+    margin-bottom: 70px;
+    background-color: rgb(240, 80, 65);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.square-btn-red:hover{
+    background-color: #f05142c4;
+}
+
+.square-btn-red2:hover{
+    background-color: #f05142c4;
+}
+
+.square-btn-red3:hover{
+    background-color: #f05142c4;
+}
+
+/* ------------mød de frivillige------------ */
+
+#mød-dem{
+    padding: 50px 10%;
+    margin-bottom: 120px;
+}
+
+.hero-trans{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-trans img{
+    width: 100%;
+    display: block;
+}
+
+.layer-hero{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(240, 81, 66, 0.65), rgba(240, 81, 66, 0.65));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.layer-hero h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.layer-hero p{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* ------------hvorfor blive frivillig------------ */
+
+#hvorfor-frivillig{
+    width: 100%;
+    background-color: #BECDD6;
+    padding: 50px 10%;
+}
+
+.container-box{
+    padding: 50px 2%;
+    margin-top: -120px;
+}
+
+.box-1{
+    width: 50%;
+    height: 40%;
+    display: inline-block;
+}
+
+.box-2{
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+}
+
+.box-2 img{
+    height: 100%;
+    width: 100%;
+    margin-left: 24%;
+}
+
+#hvorfor-frivillig p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#hvorfor-frivillig h1{
+    font-size: 50px;
+}
+
+/* ------------footer------------ */
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #F05041;
+    color: white;
+    padding: 50px 10%;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col1{
+    flex-basis: 25%;
+    padding: 0px 2%;
+}
+
+.børnsvilkår{
+    width: 223px;
+}
+
+.brack{
+    width: fit-content;
+    margin: 20px 0px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 110px;
+    position: relative;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.logo2{
+    width: 180px;
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 15px;
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ffffff;
+    transform: translateY(-5px);
+}
