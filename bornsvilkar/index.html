@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,8 @@
     <!--dette er et link til fontawesome hvor pile i cirklerne kommer fra-->
     <script src="https://kit.fontawesome.com/04a4f36b9a.js" crossorigin="anonymous"></script>
     <script src="javascript/forside/searchbar.js" defer></script>
+    <script src="javascript/forside/visKnap.js" defer></script>
+    <script src="javascript/forside/email.js" defer></script>
 
 </head>
 <body>
@@ -193,8 +195,32 @@
                 </p>
             </div>
         </div>
-        <button onclick="visMereKnap()" id="visKnap">Vis 3 mere</button>
-        <!--NOTE TIL SENERE: DER SKAL NOK EN MERE NYHEDS DEL-->
+
+
+        <button id="visKnap">Vis 3 mere</button>
+
+        <div class="infoBox04" id="ekstraBox01">
+            <div class="item17 skjult">
+                <img class="nyhedsBilleder01" src="images/nyhed01.png" alt="nyhed01">
+                <p class="clickbait01">
+                    HVIS MYNDIGHEDERNE VAR ET FORÆLDREPAR, VILLE ANBRAGTE BØRN OG UNGE FORMENTLIG BLIVE ANBRAGT PÅ NY
+                </p>
+            </div>
+            <div class="item18 skjult">
+                <img class="nyhedsBilleder01" src="images/nyhed02.png" alt="nyhed02">
+                <p class="clickbait01">
+                    SKOLEBØRN HAR OGSÅ BRUG FOR OMSORG – OG POLITIKERNE SKAL SKABE RAMMERNE FOR DET
+                </p>
+            </div>
+            <div class="item19 skjult">
+                <img class="nyhedsBilleder01" src="images/nyhed03.png" alt="nyhed02">
+                <p class="clickbait01">
+                    BØRNS VILKÅR: ANBRINGELSESSTEDER KAN GØRE BØRN OG UNGE SÅ UTRYGGE, AT DE STIKKER AF
+                </p>
+            </div>
+        </div>
+
+
 
     </div>
 
@@ -218,6 +244,7 @@
                 <input type="text" placeholder="Fornavn" id="fornavn" name="fornavn" required>
                 <input type="text" placeholder="Efternavn" id="efternavn" name="efternavn" required>
                 <input type="text" placeholder="E-mail" id="email" name="email" required>
+                <button id="tilmeldKnap">Tilmeld</button>
             </div>
             <p class="terAndCor">
                 Børns Vilkår passer godt på dine personoplysninger, og vi behandler dine personoplysninger i overensstemmelse med den gældende databeskyttelsesforordning og databeskyttelseslov.
@@ -234,7 +261,7 @@
     <footer>
         <div class="row">
             <div class="col1">
-                <img src="images/børnsvilkår.png" class="børnsvilkår">
+                <img src="images/børnsvilkår.png" class="børnsvilkår" alt="Børns Vilkår">
                 <p class="brack">Hovednummer 35 55 55 59
                     <br> 
                     Trekronergade 26
@@ -257,7 +284,6 @@
                 <span class="mail-link">SIKKER@mail-link</span>
             </div>
             <div class="col">
-                <h3></h3>
                 <ul>
                     <li><a href="https://bornsvilkar.dk/presse/">Presse</a></li>
                     <li><a href="https://bornsvilkar.career.emply.com/ledige-stilllinger">Ledige stillinger</a></li>
@@ -266,20 +292,20 @@
                     <li><a href="https://bornsvilkar.dk/stot/institutionsmedlem/">Bliv institutionsmedlem</a></li>
                     <li><a href="https://bornsvilkar.dk/whistleblowerordning/">Whistleblowing</a></li>
                     <li><a href="https://bornsvilkar.dk/podcasts/">Podcasts</a></li>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/bornsvilkar/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@BoernsVilkaar"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/boernsvilkaar"><i class="fa-brands fa-facebook"></i></a>
-                </div>
                 </ul>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bornsvilkar/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@BoernsVilkaar"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/boernsvilkaar"><i class="fa-brands fa-facebook"></i></a>
+                </div>
             </div>
             <div class="col">                
-                <img src="images/børnetelefonen.png" class="logo2">
+                <img src="images/børnetelefonen.png" class="logo2" alt="Børnetelefonen">
                 <p class="brack">SMS eller Ring til Børnetelefonen 116 111<br>
                     HovedTelefon: 35 55 55 59<br>
                     Email: bv@bornsvilkar.dk
                 </p>
-                <img src="images/hørt.png" class="logo2">
+                <img src="images/hørt.png" class="logo2" alt="Hørt">
                 <p class="brack">Email: bv@bornsvilkar.dk
                 </p>
             </div>

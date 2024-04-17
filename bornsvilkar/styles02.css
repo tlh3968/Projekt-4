@@ -278,6 +278,22 @@ nav img {
     position: relative;
     left: 45%;
     background-color: #fffeee;
+    margin-bottom: 50px;
+}
+
+#visKnap:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* CSS for den skjulte nyhedsboks som kommer fram når man trykker på knappen */
+.infoBox04 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skjult {
+    display: none;
 }
 
 /* sidste del af fyldet, den blå box til emails */
@@ -314,7 +330,15 @@ nav img {
     margin-left: 1000px;
 }
 
+#tilmeldKnap {
+    background-color: #ffffff;
+    border: 2px;
+}
 
+#tilmeldKnap:hover {
+    cursor: pointer;
+    background-color: #fffeee;
+}
 
 
 
