@@ -11,7 +11,7 @@ document.getElementById("visKnap").addEventListener("click", function() {
         }
     });
 
-    // Hvis nogle elementer er synlige, skal de skjules, så knappen har en funktion
+    // Hvis nogle elementer er synlige, skal de skjules, så knappen har en funktion, detter et loop
     if (nogleSynlige) {
         skjultItem.forEach(function(item) {
             item.style.display = "none";
