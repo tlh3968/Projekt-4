@@ -33,7 +33,7 @@ cancelButton.addEventListener('click', function(event) {
 });
 
 
-// Autocomplete sektion
+// Søgeforslag sektion
 
 // Tilføjer event listener til søgeikonet
 searchIcon.addEventListener('click', function() {
