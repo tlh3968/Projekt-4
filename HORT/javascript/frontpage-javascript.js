@@ -7,10 +7,10 @@ const nav = document.querySelector('nav');
 const searchInput = document.querySelector('.search-input');
 const suggestionsContainer = document.querySelector('.suggestions-container');
 
-// Variabel
+// Variabel der holder øje med om search er åben eller lukket
 let isSearchOpen = false;
 
-// Funktion
+// Funktion som viser eller skjuler search
 function toggleSearchForm() {
     if (isSearchOpen) {
         searchForm.style.display = 'none'; // Skjuler søgeformlen
@@ -24,7 +24,8 @@ function toggleSearchForm() {
     isSearchOpen = !isSearchOpen; // Skifter mellem vis/skjul søgeformlen
 }
 
-// Event
+// Event der lytter efter klik på søgeikonet og krydset
+// Den aktiverer ovenstående funktion
 searchIcon.addEventListener('click', toggleSearchForm);
 
 cancelButton.addEventListener('click', function(event) {
@@ -37,23 +38,7 @@ cancelButton.addEventListener('click', function(event) {
 
 // Tilføjer event listener til søgeikonet
 searchIcon.addEventListener('click', function() {
-    searchForm.style.display = 'flex';
-    navContent.style.display = 'none';
-    nav.style.justifyContent = 'center';
     showSuggestions(); // Viser søgeforslag når formlen bliver åbnet
-});
-
-// Tilføjer event listener til cancel knappen
-cancelButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    searchForm.style.display = 'none';
-    navContent.style.display = 'flex';
-    nav.style.justifyContent = '';
-});
-
-// Tilføjer event listener når input feltet er aktivt
-searchInput.addEventListener('focus', function() {
-    showSuggestions();
 });
 
 // Tilføjer event listener til når tastaturknapper ikke længere bliver trykket
@@ -69,7 +54,7 @@ function showSuggestions() {
     // Array med søgeforslag
     const suggestions = ['Børns Vilkår', 'Frivillig', 'Podcast', 'HØRT forside'];
     
-    // Filtrerer søgeforslag baseret på input fra bruger
+    // Filter der ignorerer store eller små bogstaver
     const userInput = searchInput.value.toLowerCase(); // Gør input case-insensitive
     const filteredSuggestions = suggestions.filter(suggestion => suggestion.toLowerCase().startsWith(userInput));
     
